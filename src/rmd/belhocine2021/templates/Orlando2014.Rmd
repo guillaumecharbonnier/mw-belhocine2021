@@ -1,0 +1,65 @@
+```{r {{chunk_label_prefix}}loadCoverage}
+# ratios by pair of replicates
+orlando[, EPZ_R1_over_Ctr_R1 := log2(Jurkat_K4_EPZ_R1 / Jurkat_K4_Ctr_R1)]
+orlando[, EPZ_R2_over_Ctr_R2 := log2(Jurkat_K4_EPZ_R2 / Jurkat_K4_Ctr_R2)]
+orlando[, EPZ_R1_over_Ctr_R2 := log2(Jurkat_K4_EPZ_R1 / Jurkat_K4_Ctr_R2)]
+orlando[, EPZ_R2_over_Ctr_R1 := log2(Jurkat_K4_EPZ_R2 / Jurkat_K4_Ctr_R1)]
+
+# ratio by mean of replicates
+orlando[, EPZ := (Jurkat_K4_EPZ_R1 + Jurkat_K4_EPZ_R2) / 2]
+orlando[, Ctr := (Jurkat_K4_Ctr_R1 + Jurkat_K4_Ctr_R2) / 2]
+orlando[, EPZ_over_Ctr := log2(EPZ / Ctr)]
+
+# name can be peak name instead of ensemnl id, hence the check below
+if ("ENSG00000116237" %in% orlando$name) {
+  orlando$Gene_Symbol <- mapIds(
+    org.Hs.eg.db,
+    keys = orlando$name,
+    column = "SYMBOL",
+    keytype = "ENSEMBL",
+    multiVals = "first"
+  )
+}
+
+set1Datatable(orlando)
+
+orlando <- orlando[, c(
+  "peak_type",
+  "EPZ_over_Ctr",
+  "EPZ_R1_over_Ctr_R1",
+  "EPZ_R2_over_Ctr_R2",
+  "EPZ_R1_over_Ctr_R2",
+  "EPZ_R2_over_Ctr_R1"
+)]
+orlando <- melt(orlando, id.var = c("peak_type"))
+setnames(orlando, names(orlando), c("peak_type", "sample", "log2_ratio"))
+
+if ("sharp" %in% orlando$peak_type) {
+  fig_width <- 7
+  comparisons_list <- list(c("broad", "sharp"))
+} else if ("sharp3" %in% orlando$peak_type) {
+  fig_width <- 20
+  comparisons_list <- list(
+    c("broad", "sharp1"),
+    c("broad", "sharp2"),
+    c("broad", "sharp3")
+  )
+}
+```
+
+```{r {{chunk_label_prefix}}PlotBoxWilcoxon, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = orlando,
+  comparisons_alternative = "less",
+  comparisons_pairs = comparisons_list,
+  comparisons_method = "wilcox"
+)
+```
+
+```{r {{chunk_label_prefix}}PlotBoxTTest, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = orlando,
+  comparisons_pairs = comparisons_list,
+  comparisons_alternative = "less"
+)
+```

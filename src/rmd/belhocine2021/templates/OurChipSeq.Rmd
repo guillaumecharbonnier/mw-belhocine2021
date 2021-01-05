@@ -1,0 +1,108 @@
+```{r {{chunk_label_prefix}}loadCoverage}
+
+# ratios by pair of replicates
+gtftk_coverage[, Jurkat_OCIR_over_DMSO := log2(Jurkat_OCIR_H3K4me3 / Jurkat_DMSO_H3K4me3)]
+gtftk_coverage[, Jurkat_PM_over_DMSO := log2(Jurkat_PM_H3K4me3 / Jurkat_DMSO_H3K4me3)]
+gtftk_coverage[, Jurkat_RY_over_DMSO := log2(Jurkat_RY_H3K4me3 / Jurkat_DMSO_H3K4me3)]
+gtftk_coverage[, Jurkat_PBIT_5H_over_DMSO := log2(Jurkat_PBIT_5H_H3K4me3 / Jurkat_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Jurkat_PBIT_24H_over_DMSO := log2(Jurkat_PBIT_24H_H3K4me3 / Jurkat_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Loucy_PBIT_5H_over_DMSO := log2(Loucy_PBIT_5H_H3K4me3 / Loucy_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Loucy_PBIT_24H_over_DMSO := log2(Loucy_PBIT_24H_H3K4me3 / Loucy_DMSO_24H_H3K4me3)]
+
+# name can be peak name instead of ensemnl id, hence the check below
+if ("ENSG00000116237" %in% gtftk_coverage$name) {
+  gtftk_coverage$Gene_Symbol <- mapIds(
+    org.Hs.eg.db,
+    keys = gtftk_coverage$name,
+    column = "SYMBOL",
+    keytype = "ENSEMBL",
+    multiVals = "first"
+  )
+}
+
+set1Datatable(gtftk_coverage)
+
+gtftk_coverage <- gtftk_coverage[, c(
+  "peak_type",
+  "Jurkat_OCIR_over_DMSO",
+  "Jurkat_PM_over_DMSO",
+  "Jurkat_RY_over_DMSO",
+  "Jurkat_PBIT_5H_over_DMSO",
+  "Jurkat_PBIT_24H_over_DMSO",
+  "Loucy_PBIT_5H_over_DMSO",
+  "Loucy_PBIT_24H_over_DMSO"
+)]
+
+gtftk_coverage <- melt(gtftk_coverage, id.var = c("peak_type"))
+setnames(gtftk_coverage, names(gtftk_coverage), c("peak_type", "sample", "log2_ratio"))
+
+gtftk_coverage[, sample := gsub(
+  pattern = "_over_",
+  replacement = "\nover_",
+  x = sample
+)]
+gtftk_coverage[, sample := sub(
+  pattern = "_",
+  replacement = "\n",
+  x = sample
+)]
+
+if ("sharp" %in% gtftk_coverage$peak_type) {
+  fig_width <- 7
+  comparisons_list <- list(c("broad", "sharp"))
+} else if ("sharp3" %in% gtftk_coverage$peak_type) {
+  fig_width <- 20
+  comparisons_list <- list(
+    c("broad", "sharp1"),
+    c("broad", "sharp2"),
+    c("broad", "sharp3")
+  )
+}
+```
+
+```{r {{chunk_label_prefix}}PlotBoxWilcoxon, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  comparisons_pairs = comparisons_list,
+  comparisons_method = "wilcox"
+)
+```
+
+```{r {{chunk_label_prefix}}PlotBoxTTest, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  comparisons_pairs = comparisons_list
+)
+```
+
+```{r {{chunk_label_prefix}}PlotViolinBoxplotTTestYlim3, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  comparisons_pairs = comparisons_list,
+  y_lim = c(-3, 3)
+)
+```
+
+```{r {{chunk_label_prefix}}PlotViolinBoxplotTTestYlim1, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  comparisons_pairs = comparisons_list,
+  y_lim = c(-1, 1)
+)
+```
+
+```{r {{chunk_label_prefix}}PlotViolinBoxplotTTestYlimMinus1Plus3, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  comparisons_pairs = comparisons_list,
+  y_lim = c(-1, 3)
+)
+```
+
+```{r {{chunk_label_prefix}}PlotViolinBoxplotTTestFacetWrap, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = gtftk_coverage,
+  facet_type = "wrap",
+  comparisons_pairs = comparisons_list
+)
+```

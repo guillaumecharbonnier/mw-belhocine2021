@@ -1,0 +1,27 @@
+name:
+  r_rmd_belhocine2021
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - r-rmarkdown
+  - r-bookdown
+  - pandoc=1.19 # to render R Markdown
+  - r-codetools # to avoid error after first R chunk during R Markdown compilation
+  - r-styler
+  - r-data.table
+  - r-r.utils # to load bz2 files with fread
+  - r-biocmanager # to install package unavailable in conda
+    #- r-devtools
+  - r-rcolorbrewer
+  - r-ggplot2
+  - r-ggrepel
+  - r-ggpubr
+  - bioconductor-edger # to compute TMM normalization
+  - bioconductor-rtracklayer
+  - bioconductor-genomicranges
+  - bioconductor-brgenomics # to compute pausing index
+  - bioconductor-affxparser
+  - bioconductor-affy
+

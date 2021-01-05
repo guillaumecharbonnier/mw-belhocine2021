@@ -1,0 +1,79 @@
+### H3K4me3 using our ChIP-Seq with Spikein
+
+#### On all Broad and Sharp peaks from Mohammed
+
+```{r resultsInhibitorsOurChipSeqApplyTemplate, results='asis', cache=F}
+gtftk_coverage <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$sharp <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$broad <- fread(smi)
+gtftk_coverage <- data.table(reshape2::melt(gtftk_coverage, id.vars = names(gtftk_coverage$sharp)))
+
+setnames(gtftk_coverage, "L1", "peak_type")
+
+applyTemplateOurChipSeq(gtftk_coverage,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+
+#### On Broad and Sharp1 subset from our RNA-Seq
+
+```{r resultsInhibitorsOurChipSeqUsingOurRnaSharp1SubsetApplyTemplate, results='asis', cache=F}
+gtftk_coverage <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$sharp <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$broad <- fread(smi)
+
+gtftk_coverage <- data.table(reshape2::melt(gtftk_coverage,
+  id.vars = names(gtftk_coverage$sharp)
+))
+
+setnames(gtftk_coverage, "L1", "peak_type")
+
+applyTemplateOurChipSeq(gtftk_coverage,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+
+#### On Broad and the 3 Sharp subsets from our RNA-Seq
+
+```{r resultsInhibitorsOurChipSeqUsingOurRna3SharpSubsetsApplyTemplate, results='asis', cache=F}
+gtftk_coverage <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$sharp1 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp2-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$sharp2 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp3-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$sharp3 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad-from-our-rnaseq-subsets_bw-hg19-spikein-h3k4me3-inhibitors.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$broad <- fread(smi)
+
+gtftk_coverage <- data.table(reshape2::melt(gtftk_coverage,
+  id.vars = names(gtftk_coverage$sharp1)
+))
+
+setnames(gtftk_coverage, "L1", "peak_type")
+
+applyTemplateOurChipSeq(gtftk_coverage,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+
