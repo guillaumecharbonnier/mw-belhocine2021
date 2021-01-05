@@ -11,8 +11,8 @@ cd $SM_DIR
 git pull
 
 # 3. Copy from private mw-tall repository to public mw-belhocine2021 one
-grep '^smi <- "' $RMD_DIR/*.Rmd | sed 's/^.*smi <- "//' | tr '"' ' ' > to_sync.txt
+grep '^smi <- "' $RMD_DIR/*.Rmd | sed -e 's/^.*smi <- "//' -e 's/"//' > to_sync.txt
 
-rsync -zarmvP --files-from to_sync.txt $SM_DIR/../mw-tall  $SM/mw-belhocine2021
+rsync -zarmvP --files-from to_sync.txt $SM_DIR/../mw-tall  $SM_DIR
 
 rm -f to_sync.txt
