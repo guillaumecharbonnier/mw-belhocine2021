@@ -1,0 +1,216 @@
+## Heatmaps and profiles on genes associated with Broad or Sharp peaks in their TSS
+
+Click on a column header to use as ordering column. Shift click on another column header to use as secondary ordering column. Repeat for tertiary ordering and more.
+
+All heatmaps displayed here use `--maxThreshold 1000` as `deepTools computeMatrix` argument in order to avoid an artefact in mean profile caused by a pileup of reads in the upstream of one of the plotted regions. As a consequence, median profiles are now obsolete since mean profiles without the artefact look smoother.
+
+### Groups of samples
+
+```{r hardlinkPlotheatmap, cache=F}
+# expand("out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed{heatmapWidth}_--whatToShow_cph{averageTypeSummaryPlot}/deepTools/computeMatrix_{mode}_bed-hg19-jurkat-broad-and-sharp-subsets_{bw}.pdf",·
+# 	   heatmapWidth=["","_--heatmapWidth_6"],
+# 	   averageTypeSummaryPlot=["", "_--averageTypeSummaryPlot_median"],
+# 	   mode=["scale-regions_-b_5000_-a_5000_-m_20000", "scale-regions_-b_500_-a_500", "reference-point_-b_5000_-a_5000"],
+# 	   bw=["bw-hg19-broad-tall-rev3-q4", "bw-hg19-broad-tall-rev3-q4-no-h3k4me3","bw-hg19-broad-tall-rev3-q4-h3k36me3"])
+
+# heatmapWidth <- c("--heatmapWidth_6")
+# heatmapWidth_readable <- c("wider")
+
+# averageTypeSummaryPlot <- c("",
+# 							"_--averageTypeSummaryPlot_median")
+#
+# averageTypeSummaryPlot_readable <- c("mean","median")
+smi <- "meta_broad_tall_rev3_q4"
+
+src <- "src/snakemake/tables/meta_broad_tall_rev3_q4_mode.tsv"
+linkSmiToRmdAndBookDir(src)
+mode <- fread(src)
+
+src <- "src/snakemake/tables/meta_broad_tall_rev3_q4_legendLocation.tsv"
+linkSmiToRmdAndBookDir(src)
+legendLocation <- fread(src)
+
+src <- "src/snakemake/tables/meta_broad_tall_rev3_q4_bed.tsv"
+linkSmiToRmdAndBookDir(src)
+bed <- fread(src)
+
+src <- "src/snakemake/tables/meta_broad_tall_rev3_q4_bw.tsv"
+linkSmiToRmdAndBookDir(src)
+bw <- fread(src)
+
+heatmap_args <- expand.grid( # heatmapWidth,
+  # averageTypeSummaryPlot,
+  legendLocation$id,
+  mode$id,
+  bed$id,
+  bw$id
+)
+
+heatmap_args_readable <- expand.grid( # heatmapWidth_readable,
+  # averageTypeSummaryPlot_readable,
+  legendLocation$readable,
+  mode$readable,
+  bed$readable,
+  bw$readable
+)
+
+# colnames_heatmap <- c('profile',
+colnames_heatmap <- c(
+  "legend",
+  "region",
+  "features",
+  "samples"
+)
+
+colnames(heatmap_args) <- colnames_heatmap
+colnames(heatmap_args_readable) <- colnames_heatmap
+
+href <- paste0(
+  "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--heatmapWidth_6_--whatToShow_cph",
+  # heatmap_args$profile,
+  heatmap_args$legend,
+  "/deepTools/computeMatrix_",
+  heatmap_args$region,
+  "_--maxThreshold_1000_",
+  heatmap_args$features,
+  "_",
+  heatmap_args$samples,
+  ".pdf"
+)
+
+invisible(lapply(href, linkSmiToRmdAndBookDir))
+
+URL <- paste0(
+  "<a href='",
+  href,
+  "' target='_blank'>pdf</a>"
+)
+
+urls_df <- data.frame(URL, heatmap_args_readable)
+produceDataTableWithBgCol(urls_df)
+```
+
+### Single sample RPKM-normalized
+
+```{r createTableLinkPlotheatmapSingle, cache=F}
+smi <- "meta_broad_tall_rev3_q4_single"
+
+src <- "src/snakemake/lists/samples_broad_tall_rev3_q4.txt"
+linkSmiToRmdAndBookDir(src)
+sample <- readLines(src)
+
+heatmap_args <- expand.grid(
+  legendLocation$id,
+  mode$id,
+  bed$id,
+  sample
+)
+
+heatmap_args_readable <- expand.grid(
+  legendLocation$readable,
+  mode$readable,
+  bed$readable,
+  sample
+)
+
+colnames_heatmap <- c(
+  "legend",
+  "region",
+  "features",
+  "samples"
+)
+
+colnames(heatmap_args) <- colnames_heatmap
+colnames(heatmap_args_readable) <- colnames_heatmap
+
+href <- paste0(
+  "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--heatmapWidth_6_--whatToShow_cph",
+  heatmap_args$legend,
+  "/deepTools/computeMatrix_",
+  heatmap_args$region,
+  "_--maxThreshold_1000_",
+  heatmap_args$features,
+  "/ln/alias/sst/all_samples/hg19/bw/",
+  heatmap_args$sample,
+  ".pdf"
+)
+
+invisible(lapply(href, linkSmiToRmdAndBookDir))
+
+URL <- paste0(
+  "<a href='",
+  href,
+  "' target='_blank'>pdf</a>"
+)
+
+urls_df <- data.frame(URL, heatmap_args_readable)
+produceDataTableWithBgCol(urls_df)
+```
+
+### Single sample spikein-normalized
+
+```{r createTableLinkPlotheatmapSingleSpikein, cache=F}
+smi <- "meta_broad_tall_rev3_q4_spikein_single"
+
+src <- "src/snakemake/lists/meta_broad_tall_rev3_q4_single_spikein_samples.txt"
+linkSmiToRmdAndBookDir(src)
+sample <- readLines(src)
+
+heatmap_args <- expand.grid(
+  legendLocation$id,
+  mode$id,
+  bed$id,
+  sample
+)
+
+heatmap_args_readable <- expand.grid(
+  legendLocation$readable,
+  mode$readable,
+  bed$readable,
+  sample
+)
+
+colnames_heatmap <- c(
+  "legend",
+  "region",
+  "features",
+  "samples"
+)
+
+colnames(heatmap_args) <- colnames_heatmap
+colnames(heatmap_args_readable) <- colnames_heatmap
+
+href <- paste0(
+  "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--heatmapWidth_6_--whatToShow_cph",
+  heatmap_args$legend,
+  "/deepTools/computeMatrix_",
+  heatmap_args$region,
+  "_--maxThreshold_1000_",
+  heatmap_args$features,
+  "/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/",
+  heatmap_args$sample,
+  ".pdf"
+)
+
+invisible(lapply(href, linkSmiToRmdAndBookDir))
+
+URL <- paste0(
+  "<a href='",
+  href,
+  "' target='_blank'>pdf</a>"
+)
+
+urls_df <- data.frame(URL, heatmap_args_readable)
+
+produceDataTableWithBgCol(urls_df)
+```
+
+### Heatmaps with set Y-max to focus inside genebodies
+
+```{r linkHeatmapWithSetYmaxToFocusInsideGenebodies, cache=F}
+smi <- "out/deepTools/plotHeatmap_--yMax_2_--colorList_blueCyanYellowOrangeRed_--heatmapWidth_6_--whatToShow_cph/deepTools/computeMatrix_scale-regions_-b_5000_-a_5000_-m_20000_--maxThreshold_1000_bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-genes-subsets_bw-hg19-spikein-jurkat-h3k4me3-inhibitors.pdf"
+linkSmiToRmdAndBookDir(smi)
+```
+
+* [Spikein](`r smi`)
+

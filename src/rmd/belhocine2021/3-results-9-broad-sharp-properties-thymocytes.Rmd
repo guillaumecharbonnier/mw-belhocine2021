@@ -1,0 +1,175 @@
+## Broad and sharp properties in thymocytes
+
+### Scatterplots
+
+```{r resultsBroadSharpPropertiesScatterplots}
+gtftk_coverage <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-ec-sharp/ln/alias/sst/all_samples/hg19/bw/TH91_EC_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Sharp$EC <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-lc-sharp/ln/alias/sst/all_samples/hg19/bw/TH91_LC_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Sharp$LC <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-cd4-sharp/ln/alias/sst/all_samples/hg19/bw/TH91_SP4_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Sharp$CD4 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-cd8-sharp/ln/alias/sst/all_samples/hg19/bw/TH91_SP8_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Sharp$CD8 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-ec-broad/ln/alias/sst/all_samples/hg19/bw/TH91_EC_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Broad$EC <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-lc-broad/ln/alias/sst/all_samples/hg19/bw/TH91_LC_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Broad$LC <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-cd4-broad/ln/alias/sst/all_samples/hg19/bw/TH91_SP4_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Broad$CD4 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-cd8-broad/ln/alias/sst/all_samples/hg19/bw/TH91_SP8_H3K4me3.txt"
+linkSmiToRmdAndBookDir(smi)
+gtftk_coverage$Broad$CD8 <- fread(smi)
+
+gtftk_coverage <- reshape2::melt(
+  gtftk_coverage,
+  id.vars = c(
+    "chrom",
+    "start",
+    "end",
+    "name",
+    "strand"
+  )
+)
+
+gtftk_coverage$peak_length <- gtftk_coverage$end - gtftk_coverage$start
+setnames(
+  x = gtftk_coverage,
+  old = c(
+    "L1",
+    "L2",
+    "value"
+  ),
+  new = c(
+    "peak_type",
+    "stage",
+    "mean_signal"
+  )
+)
+gtftk_coverage$stage <- factor(
+  gtftk_coverage$stage,
+  levels = c(
+    "EC",
+    "LC",
+    "CD4",
+    "CD8"
+  )
+)
+
+p <- ggplot(
+  gtftk_coverage,
+  aes(
+    y = mean_signal,
+    x = peak_length,
+    color = peak_type
+  )
+)
+p <- p + geom_point(alpha = 0.3)
+p <- p + facet_grid(. ~ stage)
+p + theme_bw()
+p + theme_minimal()
+p + theme_classic()
+
+# p <- p + facet_grid(peak_type ~ stage)
+# p + theme_bw()
+# p + theme_minimal()
+# p + theme_classic()
+
+p <- ggplot(
+  gtftk_coverage,
+  aes(
+    y = mean_signal,
+    x = log2(peak_length),
+    color = peak_type
+  )
+)
+p <- p + geom_point(alpha = 0.3)
+p <- p + facet_grid(. ~ stage)
+p + theme_bw()
+p + theme_minimal()
+p + theme_classic()
+```
+
+### Boxplots
+
+```{r resultsBroadSharpPropertiesBoxplots, fig.cap="Wilcoxon test with two-sided alternative."}
+p <- ggplot(
+  gtftk_coverage,
+  aes(
+    x = peak_type,
+    y = mean_signal,
+    color = peak_type
+  )
+)
+p <- p + geom_violin()
+p <- p + geom_boxplot(width = 0.1) # , outlier.shape = NA)
+p <- p + facet_grid(. ~ stage)
+p <- p + stat_compare_means(
+  label = "p.signif",
+  label.x = 1.5,
+  method = "wilcox",
+  # method.args = list(alternative = "greater"),
+  comparisons = list(c("Broad", "Sharp"))
+)
+p + theme_bw()
+p + theme_minimal()
+p + theme_classic()
+
+p <- ggplot(
+  gtftk_coverage,
+  aes(
+    x = peak_type,
+    y = peak_length,
+    color = peak_type
+  )
+)
+p <- p + geom_violin()
+p <- p + geom_boxplot(width = 0.1) # , outlier.shape = NA)
+p <- p + facet_grid(. ~ stage)
+p <- p + stat_compare_means(
+  label = "p.signif",
+  label.x = 1.5,
+  method = "wilcox",
+  # method.args = list(alternative = "greater"),
+  comparisons = list(c("Broad", "Sharp"))
+)
+p + theme_bw()
+p + theme_minimal()
+p + theme_classic()
+```
+
+### Heatmaps and profiles
+
+```{r resultsBroadSharpPropertiesHeatmaps, results='asis'}
+smi <- "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--whatToShow_cph/deepTools/computeMatrix_reference-point_--referencePoint_center_-b_5000_-a_5000_bed-hg19-ec-sharp-broad/ln/alias/sst/all_samples/hg19/bw/TH91_EC_H3K4me3.pdf"
+linkSmiToRmdAndBookDir(smi)
+cat("* [EC](", smi, ")\n", sep = "")
+
+smi <- "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--whatToShow_cph/deepTools/computeMatrix_reference-point_--referencePoint_center_-b_5000_-a_5000_bed-hg19-lc-sharp-broad/ln/alias/sst/all_samples/hg19/bw/TH91_LC_H3K4me3.pdf"
+linkSmiToRmdAndBookDir(smi)
+cat("* [LC](", smi, ")\n", sep = "")
+
+smi <- "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--whatToShow_cph/deepTools/computeMatrix_reference-point_--referencePoint_center_-b_5000_-a_5000_bed-hg19-cd4-sharp-broad/ln/alias/sst/all_samples/hg19/bw/TH91_SP4_H3K4me3.pdf"
+linkSmiToRmdAndBookDir(smi)
+cat("* [SP4](", smi, ")\n", sep = "")
+
+smi <- "out/deepTools/plotHeatmap_--colorList_blueCyanYellowOrangeRed_--whatToShow_cph/deepTools/computeMatrix_reference-point_--referencePoint_center_-b_5000_-a_5000_bed-hg19-cd8-sharp-broad/ln/alias/sst/all_samples/hg19/bw/TH91_SP8_H3K4me3.pdf"
+linkSmiToRmdAndBookDir(smi)
+cat("* [SP8](", smi, ")\n", sep = "")
+```

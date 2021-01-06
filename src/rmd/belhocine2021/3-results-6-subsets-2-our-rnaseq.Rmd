@@ -1,0 +1,207 @@
+### Subsets from our RNA-Seq
+
+```{r loadRnaSeqCounts, fig.cap='Boxplots showing how each broad peak is associated with a sharp peak with associated gene of similar expression value.'}
+# smi <- 'out/subread/featureCounts_-O_gtf-hg19-ensembl_bam-hg19-rna-jurkat-loucy.tsv'
+smi <- "out/subread/featureCounts_-O_gtf-GRCh37-ensembl-r87-protein-coding_bam-hg19-rna-jurkat-loucy.tsv"
+linkSmiToRmdAndBookDir(smi)
+counts <- fread(smi)
+
+# Replace 1;1;1;.... with just 1 for chr1
+counts$Chr <- sub(pattern = "^.*;", replacement = "", counts$Chr)
+counts$Strand <- sub(pattern = "^.*;", replacement = "", counts$Strand)
+counts$End <- as.integer(sub(pattern = "^.*;", replacement = "", counts$End))
+counts$Start <- as.integer(sub(pattern = ";.*$", replacement = "", counts$Start))
+
+counts <- counts[counts$Chr %in% c(1:22, "X", "Y", "MT"), ]
+
+# Remove small genes.
+counts <- counts[End - Start > 1500, ]
+
+smi <- "out/sort/_-u_-k1,1_-k2,2n/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_Jurkat.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp <- fread(smi)
+smi <- "out/sort/_-u_-k1,1_-k2,2n/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Jurkat.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Broad <- fread(smi)
+
+# Filter to get only the few insertions.
+# idxstat[nchar(Sequence_REF) == 1,]
+
+NM_Sharp <- GRanges(
+  seqnames = NM_Sharp$V1,
+  ranges = IRanges(
+    start = NM_Sharp$V2,
+    end = NM_Sharp$V3
+  )
+)
+
+NM_Broad <- GRanges(
+  seqnames = NM_Broad$V1,
+  ranges = IRanges(
+    start = NM_Broad$V2,
+    end = NM_Broad$V3
+  )
+)
+
+counts <- GRanges(
+  seqnames = paste0("chr", counts$Chr),
+  ranges = IRanges(
+    start = counts$Start,
+    end = counts$End
+  ),
+  strand = counts$Strand,
+  Geneid = counts$Geneid,
+  Jurkat = counts$"out/ln/alias/sst/all_samples/hg19/bam/Jurkat_DMSO_5h.bam" / counts$Length,
+  Loucy = counts$"out/ln/alias/sst/all_samples/hg19/bam/Loucy_DMSO_5h.bam" / counts$Length
+)
+
+m <- findOverlaps(NM_Sharp, counts)
+NM_Sharp <- NM_Sharp[queryHits(m)]
+mcols(NM_Sharp) <- mcols(counts[subjectHits(m)])
+NM_Sharp <- as.data.table(NM_Sharp)
+# remove peaks associated with more than 1 TSS
+NM_Sharp <- NM_Sharp[!(duplicated(NM_Sharp[, 1:3]) | duplicated(NM_Sharp[, 1:3], fromLast = TRUE)), ]
+
+m <- findOverlaps(NM_Broad, counts)
+NM_Broad <- NM_Broad[queryHits(m)]
+mcols(NM_Broad) <- mcols(counts[subjectHits(m)])
+
+NM_Broad <- as.data.table(NM_Broad)
+# remove peaks associated with more than 1 TSS
+NM_Broad <- NM_Broad[!(duplicated(NM_Broad[, 1:3]) | duplicated(NM_Broad[, 1:3], fromLast = TRUE)), ]
+
+# vec_to_draw : a vector of values
+# genes: a named vector with
+findClosestGeneWithoutReplacement <- function(vec_to_draw,
+                                              genes) {
+  out <- c()
+  for (x in vec_to_draw) {
+    idx <- names(which(abs(x - genes) == min(abs(x - genes)))[1])
+    out <- c(out, idx)
+    genes <- genes[which(names(genes) != idx)]
+  }
+  out
+}
+
+NM_Sharp_genes <- NM_Sharp$Jurkat
+names(NM_Sharp_genes) <- NM_Sharp$Geneid
+NM_Sharp_idx <- findClosestGeneWithoutReplacement(
+  rep(NM_Broad$Jurkat, 3),
+  NM_Sharp_genes
+)
+
+NM_Sharp_subsets <- NM_Sharp[match(NM_Sharp_idx, NM_Sharp$Geneid), ]
+
+NM_Sharp_subsets$subset <- c(
+  rep("Sharp1", length(NM_Broad$Jurkat)),
+  rep("Sharp2", length(NM_Broad$Jurkat)),
+  rep("Sharp3", length(NM_Broad$Jurkat))
+)
+NM_Broad$subset <- "All_Broad"
+NM_subsets <- rbind(NM_Sharp_subsets, NM_Broad)
+NM_subsets$paired_genes <- rep(1:length(NM_Broad$Jurkat), 4)
+
+p <- ggplot(NM_subsets, aes(x = subset, y = Jurkat))
+p <- p + geom_boxplot(width = 0.3, size = 1.5, fatten = 1.5, colour = "grey70")
+p <- p + geom_point(colour = "red", size = 2, alpha = 0.5)
+p <- p + geom_line(aes(group = paired_genes), colour = "red", linetype = "11")
+p <- p + theme_bw()
+p
+```
+
+```{r filterSubsetRnaSeqCounts, fig.cap='From figure above, we decide we should also use only broad with signal value below 60 in order to be able to get sharp with equivalent signal.'}
+NM_Broad <- NM_Broad[NM_Broad$Jurkat < 60, ]
+
+NM_Sharp_idx <- findClosestGeneWithoutReplacement(
+  rep(NM_Broad$Jurkat, 3),
+  NM_Sharp_genes
+)
+
+NM_Sharp_subsets <- NM_Sharp[match(NM_Sharp_idx, NM_Sharp$Geneid), ]
+
+NM_Sharp_subsets$subset <- c(
+  rep("Sharp1", length(NM_Broad$Jurkat)),
+  rep("Sharp2", length(NM_Broad$Jurkat)),
+  rep("Sharp3", length(NM_Broad$Jurkat))
+)
+NM_Broad$subset <- "All_Broad"
+NM_subsets <- rbind(NM_Sharp_subsets, NM_Broad)
+NM_subsets$paired_genes <- rep(1:length(NM_Broad$Jurkat), 4)
+
+p <- ggplot(NM_subsets, aes(x = subset, y = Jurkat))
+p <- p + geom_boxplot(width = 0.3, size = 1.5, fatten = 1.5, colour = "grey70")
+p <- p + geom_point(colour = "red", size = 2, alpha = 0.5)
+p <- p + geom_line(aes(group = paired_genes), colour = "red", linetype = "11")
+p <- p + theme_bw()
+p
+```
+
+```{r plotKsTest, fig.cap='Same values as above, Wicoxon test using two-sided alternative. Kolmogorov-Smirnov as text below the figure. KS is better suited for the control we are looking for, but can not be embed directly into the plot...'}
+comparisons_list <- list(
+  c("All_Broad", "Sharp1"),
+  c("All_Broad", "Sharp2"),
+  c("All_Broad", "Sharp3")
+)
+
+p <- ggplot(NM_subsets, aes(x = subset, y = Jurkat))
+p <- p + geom_violin()
+p <- p + geom_boxplot(width = 0.3, outlier.alpha = 0.2)
+p <- p + stat_summary(fun = mean, colour = "darkred", geom = "point", shape = 18, size = 3, show.legend = FALSE)
+p <- p + stat_compare_means(
+  label = "p.signif",
+  label.x = 1.5,
+  method = "wilcox.test",
+  # method.args = list(alternative = "less"),
+  comparisons = comparisons_list
+)
+p <- p + theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+# p <- p + coord_cartesian(ylim=c(-3,3))
+p <- p + theme_bw()
+p
+```
+
+```{r plotLog2RnaSeqOurSubsets, fig.cap='Log2 of values above (GeTMM). Kolmogorov-Smirnov test.', fig.width=4.5, fig.height=3.5}
+ks1 <- ks.test(
+  NM_subsets[subset == "Sharp1", ]$Jurkat,
+  NM_subsets[subset == "All_Broad", ]$Jurkat
+)
+
+ks2 <- ks.test(
+  NM_subsets[subset == "Sharp2", ]$Jurkat,
+  NM_subsets[subset == "All_Broad", ]$Jurkat
+)
+
+ks3 <- ks.test(
+  NM_subsets[subset == "Sharp3", ]$Jurkat,
+  NM_subsets[subset == "All_Broad", ]$Jurkat
+)
+
+group1 <- c("Sharp1", "Sharp2", "Sharp3")
+group2 <- c("All_Broad", "All_Broad", "All_Broad")
+ks <- c(ks1$p.value, ks2$p.value, ks3$p.value)
+ks <- format(ks, digits = 3)
+y_position <- c(6.5, 7.5, 8.5)
+
+ks_res <- data.frame(group1, group2, ks, y_position)
+
+p <- ggplot(NM_subsets, aes(x = subset, y = log2(Jurkat), color = subset))
+p <- p + scale_color_manual(values = deeptools_4_colors_palette)
+p <- p + geom_violin()
+
+p <- p + geom_boxplot(width = 0.3, outlier.alpha = 0.2)
+p <- p + stat_summary(fun = mean, colour = "darkred", geom = "point", shape = 18, size = 3, show.legend = FALSE)
+
+p <- p + stat_pvalue_manual(
+  data = ks_res,
+  label = "ks",
+  xmin = "group1",
+  xmax = "group2",
+  y.position = "y_position"
+)
+
+p <- p + theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+# p <- p + coord_cartesian(ylim=c(-3,3))
+p <- p + theme_bw()
+p
+```
+

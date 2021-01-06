@@ -1,0 +1,261 @@
+### Transcriptome using our RNA-Seq
+
+Warning: `Loucy_PBIT_24h_10uM` was sequenced using single-end while other samples were paired-end. Batch effect incoming!
+
+#### On all Broad and Sharp peaks from Mohammed
+
+```{r resultsInhibitorsOurRnaSeqAllPeaksLoadCounts, results='asis', cache=F}
+# smi <- 'out/subread/featureCounts_-O_gtf-hg19-ensembl_bam-hg19-rna-jurkat-loucy.tsv'
+smi <- "out/subread/featureCounts_-O_gtf-GRCh37-ensembl-r87-protein-coding_bam-hg19-rna-jurkat-loucy-pbit.tsv"
+linkSmiToRmdAndBookDir(smi)
+counts <- fread(smi)
+
+# Replace 1;1;1;.... with just 1 for chr1
+counts$Chr <- sub(pattern = "^.*;", replacement = "", counts$Chr)
+counts$Strand <- sub(pattern = "^.*;", replacement = "", counts$Strand)
+counts$End <- as.integer(sub(pattern = "^.*;", replacement = "", counts$End))
+counts$Start <- as.integer(sub(pattern = ";.*$", replacement = "", counts$Start))
+
+setnames(counts, names(counts), gsub("out/ln/alias/sst/all_samples/hg19/bam/|.bam", "", names(counts)))
+
+counts$Gene_Symbol <- mapIds(
+  org.Hs.eg.db,
+  keys = counts$Geneid,
+  column = "SYMBOL",
+  keytype = "ENSEMBL",
+  multiVals = "first"
+)
+
+samples <- c(
+  "Jurkat_DMSO_5h",
+  "Jurkat_PBIT_5h_10uM",
+  "Jurkat_PBIT_24h_10uM",
+  "Loucy_DMSO_5h",
+  "Loucy_PBIT_5h_10uM",
+  "Loucy_PBIT_24h_10uM"
+)
+
+### ADD NORMALISATION Ge TMM here
+rpk <- as.matrix(counts[, .SD, .SDcols = names(counts) %in% samples] / (counts$Length / 1000))
+dge_rpk <- DGEList(counts = rpk)
+dge_rpk <- calcNormFactors(dge_rpk, method = "TMM")
+tmm_rpk <- cpm(dge_rpk)
+counts <- data.table(
+  Gene = counts$Geneid,
+  Gene_Symbol = counts$Gene_Symbol,
+  tmm_rpk
+)
+
+pseudolog <- 10^-9
+
+counts[, Jurkat_PBIT_5H_over_DMSO := log2((Jurkat_PBIT_5h_10uM + pseudolog) / (Jurkat_DMSO_5h + pseudolog))]
+counts[, Jurkat_PBIT_24H_over_DMSO := log2((Jurkat_PBIT_24h_10uM + pseudolog) / (Jurkat_DMSO_5h + pseudolog))]
+counts[, Loucy_PBIT_5H_over_DMSO := log2((Loucy_PBIT_5h_10uM + pseudolog) / (Loucy_DMSO_5h + pseudolog))]
+counts[, Loucy_PBIT_24H_over_DMSO := log2((Loucy_PBIT_24h_10uM + pseudolog) / (Loucy_DMSO_5h + pseudolog))]
+
+# Arbitrary threshold to remove high log2FC based on very low counts
+low_signal_threshold <- 2
+# low_signal_threshold <- 1 # still 2 artefacts with this value
+counts[, Jurkat_PBIT_5H_over_DMSO := ifelse(Jurkat_PBIT_5h_10uM + Jurkat_DMSO_5h < low_signal_threshold, 0, Jurkat_PBIT_5H_over_DMSO)]
+counts[, Jurkat_PBIT_24H_over_DMSO := ifelse(Jurkat_PBIT_24h_10uM + Jurkat_DMSO_5h < low_signal_threshold, 0, Jurkat_PBIT_24H_over_DMSO)]
+counts[, Loucy_PBIT_5H_over_DMSO := ifelse(Loucy_PBIT_5h_10uM + Loucy_DMSO_5h < low_signal_threshold, 0, Loucy_PBIT_5H_over_DMSO)]
+counts[, Loucy_PBIT_24H_over_DMSO := ifelse(Loucy_PBIT_24h_10uM + Loucy_DMSO_5h < low_signal_threshold, 0, Loucy_PBIT_24H_over_DMSO)]
+
+counts <- counts[, .SD, .SDcols = !names(counts) %in% samples]
+
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Broad.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Broad <- fread(smi)
+
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp <- fread(smi)
+
+ratios <- list()
+ratios$broad <- counts[Gene %in% NM_Broad$V4, ]
+ratios$sharp <- counts[Gene %in% NM_Sharp$V4, ]
+
+cat("Broad peaks")
+set1Datatable(ratios$broad)
+
+cat("Sharp peaks")
+set1Datatable(ratios$sharp)
+
+ratios <- reshape2::melt(ratios, id.vars = c("Gene", "Gene_Symbol"))
+setnames(
+  ratios, c("variable", "value", "L1"),
+  c("sample", "log2_ratio", "peak_type")
+)
+
+if ("sharp" %in% ratios$peak_type) {
+  fig_width <- 7
+  comparisons_list <- list(c("broad", "sharp"))
+} else if ("sharp3" %in% ratios$peak_type) {
+  fig_width <- 20
+  comparisons_list <- list(
+    c("broad", "sharp1"),
+    c("broad", "sharp2"),
+    c("broad", "sharp3")
+  )
+}
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingAllPeaksPlotBoxWilcoxon, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  comparisons_method = "wilcox"
+)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingAllPeaksPlotBoxTTest, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingAllPeaksPlotViolinBoxplotTTestYlim3, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-3, 3))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingAllPeaksPlotViolinBoxplotTTestYlim1, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-1, 1))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingAllPeaksPlotViolinBoxplotTTestFacetWrap, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  facet_type = "wrap",
+  comparisons_pairs = comparisons_list
+)
+```
+
+#### On Broad and Sharp 1 subset from our RNA-Seq {#resultsInhibitorsOurRnaSeqUsingSharp1Subset}
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetLoadCounts, warning=FALSE}
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp1.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp1 <- fread(smi)
+
+ratios <- list()
+ratios$broad <- counts[Gene %in% NM_Broad$V4, ]
+ratios$sharp <- counts[Gene %in% NM_Sharp1$V4, ]
+
+ratios <- reshape2::melt(ratios, id.vars = c("Gene", "Gene_Symbol"))
+setnames(
+  ratios, c("variable", "value", "L1"),
+  c("sample", "log2_ratio", "peak_type")
+)
+
+if ("sharp" %in% ratios$peak_type) {
+  fig_width <- 7
+  comparisons_list <- list(c("broad", "sharp"))
+} else if ("sharp3" %in% ratios$peak_type) {
+  fig_width <- 20
+  comparisons_list <- list(
+    c("broad", "sharp1"),
+    c("broad", "sharp2"),
+    c("broad", "sharp3")
+  )
+}
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetPlotBoxWilcoxon, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  comparisons_method = "wilcox"
+)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetPlotBoxTTest, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetPlotViolinBoxplotTTestYlim3, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-3, 3))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetPlotViolinBoxplotTTestYlim1, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-1, 1))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharp1SubsetPlotViolinBoxplotTTestFacetWrap, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  facet_type = "wrap",
+  comparisons_pairs = comparisons_list
+)
+```
+
+#### On Broad and the 3 Sharp subsets from our RNA-Seq {#resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsets}
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsLoadCounts, warning=FALSE}
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp1.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp1 <- fread(smi)
+
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp2.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp2 <- fread(smi)
+
+smi <- "out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp3.bed"
+linkSmiToRmdAndBookDir(smi)
+NM_Sharp3 <- fread(smi)
+
+ratios <- list()
+ratios$broad <- counts[Gene %in% NM_Broad$V4, ]
+ratios$sharp1 <- counts[Gene %in% NM_Sharp1$V4, ]
+ratios$sharp2 <- counts[Gene %in% NM_Sharp2$V4, ]
+ratios$sharp3 <- counts[Gene %in% NM_Sharp3$V4, ]
+
+cat("Sharp1 peaks")
+set1Datatable(ratios$sharp1)
+
+cat("Sharp2 peaks")
+set1Datatable(ratios$sharp2)
+
+cat("Sharp3 peaks")
+set1Datatable(ratios$sharp3)
+
+ratios <- reshape2::melt(ratios, id.vars = c("Gene", "Gene_Symbol"))
+setnames(
+  ratios, c("variable", "value", "L1"),
+  c("sample", "log2_ratio", "peak_type")
+)
+
+if ("sharp" %in% ratios$peak_type) {
+  fig_width <- 7
+  comparisons_list <- list(c("broad", "sharp"))
+} else if ("sharp3" %in% ratios$peak_type) {
+  fig_width <- 20
+  comparisons_list <- list(
+    c("broad", "sharp1"),
+    c("broad", "sharp2"),
+    c("broad", "sharp3")
+  )
+}
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsPlotBoxWilcoxon, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  comparisons_method = "wilcox"
+)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsPlotBoxTTest, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios)
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsPlotViolinBoxplotTTestYlim3, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-3, 3))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsPlotViolinBoxplotTTestYlim1, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(data = ratios, y_lim = c(-1, 1))
+```
+
+```{r resultsInhibitorsOurRnaSeqUsingOurRnaSharpSubsetsPlotViolinBoxplotTTestFacetWrap, fig.cap=fig_cap, fig.width=fig_width, dependson="definePlotViolinBoxplot"}
+fig_cap <- plotViolinBoxplot(
+  data = ratios,
+  facet_type = "wrap",
+  comparisons_pairs = comparisons_list
+)
+```

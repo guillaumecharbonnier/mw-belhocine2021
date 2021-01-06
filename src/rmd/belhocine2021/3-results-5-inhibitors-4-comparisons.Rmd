@@ -1,0 +1,121 @@
+### Comparisons
+
+```{r resultsInhibitorsComparisons}
+gtftk_coverage[, Jurkat_PBIT_5H_over_DMSO_H3K4me3 := log2(Jurkat_PBIT_5H_H3K4me3 / Jurkat_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Jurkat_PBIT_24H_over_DMSO_H3K4me3 := log2(Jurkat_PBIT_24H_H3K4me3 / Jurkat_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Loucy_PBIT_5H_over_DMSO_H3K4me3 := log2(Loucy_PBIT_5H_H3K4me3 / Loucy_DMSO_24H_H3K4me3)]
+gtftk_coverage[, Loucy_PBIT_24H_over_DMSO_H3K4me3 := log2(Loucy_PBIT_24H_H3K4me3 / Loucy_DMSO_24H_H3K4me3)]
+
+ratios <- reshape2::dcast(
+  ratios,
+  ... ~ sample,
+  value.var = "log2_ratio"
+)
+setnames(
+  x = ratios,
+  old = names(ratios),
+  new = gsub(
+    pattern = "DMSO",
+    replacement = "DMSO_RNA",
+    x = names(ratios)
+  )
+)
+setnames(
+  x = gtftk_coverage,
+  old = "name",
+  new = "Gene"
+)
+ratios <- merge(
+  ratios,
+  gtftk_coverage,
+  by = c("Gene", "peak_type")
+)
+set1Datatable(ratios)
+```
+
+```{r resultsInhibitorsComparisonsJurkat5h, fig.cap="Jurkat 5h"}
+p <- ggplot(
+  ratios,
+  aes(
+    x = Jurkat_PBIT_5H_over_DMSO_RNA,
+    y = Jurkat_PBIT_5H_over_DMSO_H3K4me3,
+    color = peak_type
+  )
+)
+p <- p + geom_point()
+p <- p + scale_color_manual(values = deeptools_4_colors_palette)
+p <- p + xlab("log2(RNA_PBIT / RNA_DMSO)")
+p <- p + ylab("log2(H3K4me3_PBIT / H3K4me3_DMSO)")
+p <- p + geom_text_repel(
+  data = subset(ratios, Jurkat_PBIT_5H_over_DMSO_RNA < -0.5),
+  aes(label = Gene),
+  box.padding = unit(0.35, "lines"),
+  point.padding = unit(0.3, "lines")
+)
+p
+```
+```{r resultsInhibitorsComparisonsJurkat24h, fig.cap="Jurkat 24h"}
+p <- ggplot(
+  ratios,
+  aes(
+    x = Jurkat_PBIT_24H_over_DMSO_RNA,
+    y = Jurkat_PBIT_24H_over_DMSO_H3K4me3,
+    color = peak_type
+  )
+)
+p <- p + geom_point()
+p <- p + scale_color_manual(values = deeptools_4_colors_palette)
+p <- p + xlab("log2(RNA_PBIT / RNA_DMSO)")
+p <- p + ylab("log2(H3K4me3_PBIT / H3K4me3_DMSO)")
+p <- p + geom_text_repel(
+  data = subset(ratios, Jurkat_PBIT_24H_over_DMSO_RNA < -1.5),
+  aes(label = Gene),
+  box.padding = unit(0.35, "lines"),
+  point.padding = unit(0.3, "lines")
+)
+p
+```
+```{r resultsInhibitorsComparisonsLoucy5h, fig.cap="Loucy 5h"}
+p <- ggplot(
+  ratios,
+  aes(
+    x = Loucy_PBIT_5H_over_DMSO_RNA,
+    y = Loucy_PBIT_5H_over_DMSO_H3K4me3,
+    color = peak_type
+  )
+)
+p <- p + geom_point()
+p <- p + scale_color_manual(values = deeptools_4_colors_palette)
+p <- p + xlab("RNA") + ylab("H3K4me3")
+p <- p + xlab("log2(RNA_PBIT / RNA_DMSO)")
+p <- p + ylab("log2(H3K4me3_PBIT / H3K4me3_DMSO)")
+p <- p + geom_text_repel(
+  data = subset(ratios, Loucy_PBIT_5H_over_DMSO_RNA < -10),
+  aes(label = Gene),
+  box.padding = unit(0.35, "lines"),
+  point.padding = unit(0.3, "lines")
+)
+p
+```
+```{r resultsInhibitorsComparisonsLoucy24h, fig.cap="Loucy 24h"}
+p <- ggplot(
+  ratios,
+  aes(
+    x = Loucy_PBIT_24H_over_DMSO_RNA,
+    y = Loucy_PBIT_24H_over_DMSO_H3K4me3,
+    color = peak_type
+  )
+)
+p <- p + geom_point()
+p <- p + scale_color_manual(values = deeptools_4_colors_palette)
+p <- p + xlab("RNA") + ylab("H3K4me3")
+p <- p + xlab("log2(RNA_PBIT / RNA_DMSO)")
+p <- p + ylab("log2(H3K4me3_PBIT / H3K4me3_DMSO)")
+p <- p + geom_text_repel(
+  data = subset(ratios, Loucy_PBIT_24H_over_DMSO_RNA < -10),
+  aes(label = Gene),
+  box.padding = unit(0.35, "lines"),
+  point.padding = unit(0.3, "lines")
+)
+p
+```

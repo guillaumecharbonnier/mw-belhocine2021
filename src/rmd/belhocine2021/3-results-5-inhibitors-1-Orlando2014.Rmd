@@ -1,0 +1,87 @@
+## Impact of various inhibitors on
+
+### H3K4me3 using ChIP-Seq from Orlando 2014
+
+Interesting samples:
+```
+GSM1464990	Jurkat_K4_0%_R2
+GSM1464999	Jurkat_K4_0%_R1
+GSM1465003	Jurkat_K4_100%_R1
+GSM1465019	Jurkat_K4_100%_R2
+```
+
+#### On all Broad and Sharp peaks from Mohammed
+
+```{r resultsOrlando2014ApplyTemplate, results='asis', cache=F}
+orlando <- list()
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$sharp <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$broad <- fread(smi)
+orlando <- data.table(reshape2::melt(orlando, id.vars = names(orlando$sharp)))
+setnames(orlando, names(orlando), c("chrom", "start", "end", "name", "strand", "Jurkat_K4_Ctr_R2", "Jurkat_K4_Ctr_R1", "Jurkat_K4_EPZ_R1", "Jurkat_K4_EPZ_R2", "peak_type"))
+
+applyTemplateOrlando2014(orlando,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+
+#### On Broad and Sharp1 subset from our RNA-Seq
+
+```{r resultsOrlando2014UsingOurRnaSharp1SubsetApplyTemplate, results='asis', cache=F}
+orlando <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$sharp <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$broad <- fread(smi)
+
+orlando <- data.table(reshape2::melt(orlando,
+  id.vars = names(orlando$sharp)
+))
+
+setnames(orlando, names(orlando), c("chrom", "start", "end", "name", "strand", "Jurkat_K4_Ctr_R2", "Jurkat_K4_Ctr_R1", "Jurkat_K4_EPZ_R1", "Jurkat_K4_EPZ_R2", "peak_type"))
+
+applyTemplateOrlando2014(orlando,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+
+#### On Broad and the 3 Sharp subsets from our RNA-Seq
+
+```{r resultsOrlando2014UsingOurRna3SharpSubsetsApplyTemplate, results='asis', cache=F}
+orlando <- list()
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$sharp1 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp2-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$sharp2 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-sharp3-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$sharp3 <- fread(smi)
+
+smi <- "out/gtftk/coverage_-x_chrominfo-hg19_bed-hg19-jurkat-broad-from-our-rnaseq-subsets_bw-hg19-Orlando2014-Jurkat.txt"
+linkSmiToRmdAndBookDir(smi)
+orlando$broad <- fread(smi)
+
+orlando <- data.table(reshape2::melt(orlando,
+  id.vars = names(orlando$sharp1)
+))
+
+setnames(orlando, names(orlando), c("chrom", "start", "end", "name", "strand", "Jurkat_K4_Ctr_R2", "Jurkat_K4_Ctr_R1", "Jurkat_K4_EPZ_R1", "Jurkat_K4_EPZ_R2", "peak_type"))
+
+applyTemplateOrlando2014(orlando,
+  chunk_label_prefix = opts_current$get("label")
+)
+```
+

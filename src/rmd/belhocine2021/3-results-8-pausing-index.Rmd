@@ -1,0 +1,27 @@
+## Pausing index
+
+The Pausing Index is the ratio of Pol II signal density near a gene promoter to signal density within the gene body (Adelman and Lis,2012), such that higher Pausing Indices reflect a greater enrichment of promoter-paused PolII.
+
+[Tool used to compute pausing index](https://rdrr.io/github/mdeber/BRGenomics/man/getPausingIndices.html)
+
+Currently, pausing index is computed using Jurkat samples and the 198 Broad peaks associated with the 3 sharp subsets from *3.6 KalenderAtak2013*.
+No filtering of gene length is computed and as such, gene body can only be trimmed of 200bp (instead of 500bp) from TSS and TES for the computation because of a very short gene in the set (~ 450bp).
+
+```{r includePausingIndexBoxplots, fig.cap='Pausing index on subsets from **KalenderAtak2013**. **200bp** are trimmed from TSS and TES for the computation of signal in genebodies.'}
+smi <- "out/r/compute_pausing_index/pi_boxplot.png"
+linkSmiToRmdAndBookDir(smi)
+knitr::include_graphics(smi)
+```
+
+```{r includePausingIndexBoxplotsFromOurRnaseq, fig.cap='Pausing index on subsets from **our RNA-Seq**. **200bp** are trimmed from TSS and TES for the computation of signal in genebodies.'}
+smi <- "out/r/compute_pausing_index_in_broad_and_sharp_subsets_from_our_rnaseq/pi_boxplot.png"
+linkSmiToRmdAndBookDir(smi)
+knitr::include_graphics(smi)
+```
+
+```{r includePausingIndexGenebodiesTrim500bBoxplotsFromOurRnaseq, fig.cap='Pausing index on subsets from **our RNA-Seq**. **500bp** are trimmed from TSS and TES for the computation of signal in genebodies.'}
+smi <- "out/r/compute_pausing_index_in_broad_and_sharp_subsets_from_our_rnaseq/pi_genebodies_trim_500b_boxplot.png"
+linkSmiToRmdAndBookDir(smi)
+knitr::include_graphics(smi)
+
+```
