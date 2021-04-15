@@ -1,0 +1,3 @@
+out/ln/alias/sst/all_samples/hg19/bw/DND-41_SRX186659_H3K36me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR11783980_H3K36me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Loucy_SRX2636361_H3K36me3.bw

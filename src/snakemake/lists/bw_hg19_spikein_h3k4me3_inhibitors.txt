@@ -1,0 +1,10 @@
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3.bw
+out/deepTools/spikeIn_bamCoverage_BDGP6/samtools/sam_to_bam_bai_-q_30/bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3.bw

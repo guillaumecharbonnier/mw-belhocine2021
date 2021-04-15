@@ -1,0 +1,10 @@
+Jurkat_DMSO_H3K4me3
+Jurkat_OCIR_H3K4me3
+Jurkat_PM_H3K4me3
+Jurkat_RY_H3K4me3
+Jurkat_DMSO_24H_H3K4me3
+Jurkat_PBIT_5H_H3K4me3
+Jurkat_PBIT_24H_H3K4me3
+Loucy_DMSO_24H_H3K4me3
+Loucy_PBIT_5H_H3K4me3
+Loucy_PBIT_24H_H3K4me3

@@ -1,0 +1,13 @@
+out/ln/alias/sst/all_samples/hg19/bw/DND-41_SRX186659_H3K36me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/DND-41_SRX186665_H3K79me2.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_Ctrl_SRR1536543_H3K4me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_Ctrl_SRR1536552_H3K4me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_EPZ_SRR1536556_H3K4me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_EPZ_SRR1536572_H3K4me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR1057275_CDK7.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR11783980_H3K36me3.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR1536561_H3K79me2.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR2157609_Pol2.bw
+out/ln/alias/sst/all_samples/hg19/bw/Jurkat_SRR231122_DNaseI.bw
+out/ln/alias/sst/all_samples/hg19/bw/Loucy_SRR5338727_H3K79me2.bw
+out/ln/alias/sst/all_samples/hg19/bw/Loucy_SRX2636361_H3K36me3.bw
