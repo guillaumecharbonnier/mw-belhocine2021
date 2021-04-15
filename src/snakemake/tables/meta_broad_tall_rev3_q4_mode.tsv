@@ -1,0 +1,8 @@
+id	readable
+scale-regions_-b_5000_-a_5000_-m_20000	-5kb:TSS:Gene_body_as_20kb:TES:+5kb
+scale-regions_-b_5000_-a_5000_--unscaled5prime_5000_-m_20000	-5kb:TSS:+5kb:Rest_of_gene_body_as_20kb:TES:+5kb
+scale-regions_-b_5000_-a_5000_--unscaled5prime_5000_--unscaled3prime_5000_-m_20000	-5kb:TSS:+5kb:Rest_of_gene_body_as_20kb:-5kb:TES:+5kb
+scale-regions_-b_500_-a_500_--unscaled5prime_500	-500b:TSS:+500b:Rest_of_gene_body_as_1kb:TES:+500b
+scale-regions_-b_500_-a_500_--unscaled5prime_500_--unscaled3prime_500	-500b:TSS:+500b:Rest_of_gene_body_as_1kb:-500b:TES:+500b
+scale-regions	TSS:Gene_body_as_1kb:TES
+reference-point_-b_5000_-a_5000	-5kb:TSS:+5kb

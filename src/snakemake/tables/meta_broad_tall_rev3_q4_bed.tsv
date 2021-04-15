@@ -1,0 +1,6 @@
+id	readable
+bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-genes-subsets	Subsets from our RNA-Seq
+bed-hg19-jurkat-broad-and-sharp-subsets	Subset from KalenderAtak2013
+bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-genes-trim-500b-at-TSS-TES-subsets	Subsets from our RNA-Seq trim 500b
+bed-hg19-jurkat-broad-and-sharp-length-gt-1500b-trim-500b-at-TSS-TES-subsets	Subset from KalenderAtak2013 trim 500b
+

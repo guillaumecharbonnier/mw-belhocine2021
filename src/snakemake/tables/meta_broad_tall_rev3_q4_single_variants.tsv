@@ -1,0 +1,4 @@
+id	readable
+	all genes
+-length-gt-1500b	>1.5 kb genes
+-length-gt-1500b-trim-500b-at-TSS-TES	>1.5 kb genes + trim 500b at TSS & TES

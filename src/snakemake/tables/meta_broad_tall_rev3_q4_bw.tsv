@@ -1,0 +1,6 @@
+id	readable
+bw-hg19-broad-tall-rev3-q4	All samples
+bw-hg19-broad-tall-rev3-q4-no-h3k4me3	No H3K4me3
+bw-hg19-spikein-jurkat-h3k4me3-inhibitors	Spikein Jurkat
+bw-hg19-spikein-h3k4me3-inhibitors	Spikein
+bw-hg19-broad-tall-rev3-q4-h3k36me3	Only H3K36me3
