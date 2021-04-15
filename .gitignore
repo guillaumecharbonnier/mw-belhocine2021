@@ -2,3 +2,4 @@ out/bookdown
 _bookdown_files
 src/rmd/*/out
 _main.Rmd
+.snakemake
