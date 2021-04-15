@@ -1,0 +1,25 @@
+id	path
+bed-hg19-jurkat-sharp	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_Jurkat.bed"]
+bed-hg19-jurkat-broad	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Jurkat.bed"]
+bed-hg19-jurkat-broad-and-sharp-subsets	expand("out/r/extract_control_sharp_subsets_from_Atak2013/NM_{subsets}.bed", subsets=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-jurkat-broad-and-sharp-length-gt-1500b-subsets	expand("out/r/extract_control_sharp_subsets_from_Atak2013/NM_{subsets}_length_gt_1500b.bed", subsets=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-jurkat-broad-and-sharp-length-gt-1500b-trim-500b-at-TSS-TES-subsets	expand("out/r/extract_control_sharp_subsets_from_Atak2013/NM_{subsets}_length_gt_1500b_trim_500b_at_TSS_TES.bed", subsets=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-jurkat-broad-from-our-rnaseq-subsets	['out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Broad.bed']
+bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets	['out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp1.bed']
+bed-hg19-jurkat-sharp2-from-our-rnaseq-subsets	['out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp2.bed']
+bed-hg19-jurkat-sharp3-from-our-rnaseq-subsets	['out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_Sharp3.bed']
+bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-subsets	expand('out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_{subset}.bed', subset=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-genes-subsets	expand('out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_genes_associated_with_{subset}.bed', subset=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-jurkat-broad-and-sharp-from-our-rnaseq-genes-trim-500b-at-TSS-TES-subsets	expand('out/r/extract_control_sharp_subsets_from_our_rnaseq/NM_genes_associated_with_{subset}_trim_500b_at_TSS_TES.bed', subset=JURKAT_BROAD_AND_SHARP_SUBSETS)
+bed-hg19-ec-sharp	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_EC_TH91_H3K4me3_S010NDH1.bed"]
+bed-hg19-lc-sharp	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_LC_TH91_H3K4me3_S010Q7H1.bed"]
+bed-hg19-cd4-sharp	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_CD4_TH91_H3K4me3_S010R5H1.bed"]
+bed-hg19-cd8-sharp	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_CD8_TH91_H3K4me3_S010S3H1.bed"]
+bed-hg19-ec-broad	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_EC_TH91_H3K4me3_S010NDH1.bed"]
+bed-hg19-lc-broad	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_LC_TH91_H3K4me3_S010Q7H1.bed"]
+bed-hg19-cd4-broad	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_CD4_TH91_H3K4me3_S010R5H1.bed"]
+bed-hg19-cd8-broad	["out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_CD8_TH91_H3K4me3_S010S3H1.bed"]
+bed-hg19-ec-sharp-broad	expand("out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/{peak_type}/NM_{peak_type}_EC_TH91_H3K4me3_S010NDH1.bed", peak_type=["Broad", "Sharp"])
+bed-hg19-lc-sharp-broad	expand("out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/{peak_type}/NM_{peak_type}_LC_TH91_H3K4me3_S010Q7H1.bed", peak_type=["Broad", "Sharp"])
+bed-hg19-cd4-sharp-broad	expand("out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/{peak_type}/NM_{peak_type}_CD4_TH91_H3K4me3_S010R5H1.bed", peak_type=["Broad", "Sharp"])
+bed-hg19-cd8-sharp-broad	expand("out/sort/_-u/ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/{peak_type}/NM_{peak_type}_CD8_TH91_H3K4me3_S010S3H1.bed", peak_type=["Broad", "Sharp"])
