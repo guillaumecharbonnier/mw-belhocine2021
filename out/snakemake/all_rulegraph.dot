@@ -1,0 +1,123 @@
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+	0[label = "gtftk_coverage_extra_chrominfo_bed_bw", color = "0.56 0.6 0.85", style="rounded"];
+	1[label = "deepTools_plotHeatmap_extra", color = "0.16 0.6 0.85", style="rounded"];
+	2[label = "gtftk_coverage_extra_chrominfo_bed_single_bw", color = "0.57 0.6 0.85", style="rounded"];
+	3[label = "subread_featureCounts_extra", color = "0.13 0.6 0.85", style="rounded"];
+	4[label = "meta_broad_tall_rev3_q4_spikein_single", color = "0.01 0.6 0.85", style="rounded"];
+	5[label = "sort_extra", color = "0.36 0.6 0.85", style="rounded"];
+	6[label = "meta_broad_tall_rev3_q4_single", color = "0.63 0.6 0.85", style="rounded"];
+	7[label = "r_compute_pausing_index", color = "0.16 0.6 0.85", style="rounded"];
+	8[label = "r_compute_pausing_index_from_our_rnaseq", color = "0.55 0.6 0.85", style="rounded"];
+	9[label = "r_extract_control_sharp_subsets_from_our_rnaseq", color = "0.30 0.6 0.85", style="rounded"];
+	10[label = "meta_broad_tall_rev3_q4", color = "0.05 0.6 0.85", style="rounded"];
+	11[label = "gunzip_extra", color = "0.56 0.6 0.85", style="rounded"];
+	12[label = "deepTools_spikeIn_bamCoverage", color = "0.57 0.6 0.85", style="rounded"];
+	13[label = "deepTools_computeMatrix_SingleBw_extra", color = "0.39 0.6 0.85", style="rounded"];
+	14[label = "ln_alias", color = "0.60 0.6 0.85", style="rounded"];
+	15[label = "gtftk_select_by_key_key_value", color = "0.06 0.6 0.85", style="rounded"];
+	16[label = "ln_srf_parent_dir", color = "0.42 0.6 0.85", style="rounded"];
+	17[label = "ucsc_bedGraphToBigWig", color = "0.21 0.6 0.85", style="rounded"];
+	18[label = "deepTools_computeMatrix_extra", color = "0.61 0.6 0.85", style="rounded"];
+	19[label = "deepTools_bamCoverage_extra", color = "0.34 0.6 0.85", style="rounded"];
+	20[label = "r_extract_control_sharp_subsets_from_Atak2013", color = "0.28 0.6 0.85", style="rounded"];
+	21[label = "wget_protocol", color = "0.54 0.6 0.85", style="rounded"];
+	22[label = "samtools_sam_to_bam_bai_extra", color = "0.61 0.6 0.85", style="rounded"];
+	23[label = "samtools_index", color = "0.32 0.6 0.85", style="rounded"];
+	24[label = "gtftk_get_5p_3p_coords", color = "0.48 0.6 0.85", style="rounded"];
+	25[label = "bowtie2_paired_end_extra", color = "0.11 0.6 0.85", style="rounded"];
+	26[label = "star_pe_extra", color = "0.28 0.6 0.85", style="rounded"];
+	27[label = "star_se_extra", color = "0.19 0.6 0.85", style="rounded"];
+	28[label = "tail_extra", color = "0.43 0.6 0.85", style="rounded"];
+	29[label = "samtools_sort_extra", color = "0.59 0.6 0.85", style="rounded"];
+	30[label = "gtftk_convert_ensembl", color = "0.65 0.6 0.85", style="rounded"];
+	31[label = "sickle_pe_extra", color = "0.54 0.6 0.85", style="rounded"];
+	32[label = "tar_xvzf_igenome", color = "0.37 0.6 0.85", style="rounded"];
+	33[label = "bowtie2_build", color = "0.11 0.6 0.85", style="rounded"];
+	34[label = "star_build_index", color = "0.14 0.6 0.85", style="rounded"];
+	35[label = "sickle_se_extra", color = "0.64 0.6 0.85", style="rounded"];
+	36[label = "igvtools_tdftobedgraph", color = "0.66 0.6 0.85", style="rounded"];
+	37[label = "samtools_view_sam_to_bam_extra", color = "0.41 0.6 0.85", style="rounded"];
+	38[label = "cat", color = "0.13 0.6 0.85", style="rounded"];
+	39[label = "wget_interesting_samples_from_GSE60104", color = "0.11 0.6 0.85", style="rounded"];
+	40[label = "bowtie2_single_end_extra", color = "0.13 0.6 0.85", style="rounded"];
+	41[label = "sra_tools_fastq_dump_se_extra", color = "0.03 0.6 0.85", style="rounded"];
+	12 -> 0
+	9 -> 0
+	5 -> 0
+	11 -> 0
+	17 -> 0
+	18 -> 1
+	13 -> 1
+	11 -> 2
+	5 -> 2
+	14 -> 2
+	15 -> 3
+	14 -> 3
+	1 -> 4
+	16 -> 5
+	28 -> 5
+	1 -> 6
+	20 -> 7
+	19 -> 7
+	9 -> 8
+	19 -> 8
+	3 -> 9
+	5 -> 9
+	1 -> 10
+	21 -> 11
+	22 -> 12
+	12 -> 13
+	9 -> 13
+	20 -> 13
+	5 -> 13
+	14 -> 13
+	16 -> 14
+	38 -> 14
+	19 -> 14
+	41 -> 14
+	23 -> 14
+	11 -> 15
+	11 -> 17
+	5 -> 17
+	14 -> 18
+	9 -> 18
+	20 -> 18
+	12 -> 18
+	23 -> 19
+	24 -> 20
+	5 -> 20
+	25 -> 22
+	27 -> 23
+	26 -> 23
+	29 -> 23
+	30 -> 24
+	33 -> 25
+	32 -> 25
+	31 -> 25
+	11 -> 26
+	34 -> 26
+	31 -> 26
+	11 -> 27
+	34 -> 27
+	35 -> 27
+	36 -> 28
+	37 -> 29
+	11 -> 30
+	14 -> 31
+	21 -> 32
+	11 -> 33
+	11 -> 34
+	38 -> 34
+	14 -> 35
+	39 -> 36
+	40 -> 37
+	25 -> 37
+	16 -> 38
+	11 -> 38
+	14 -> 38
+	32 -> 40
+	35 -> 40
+}            

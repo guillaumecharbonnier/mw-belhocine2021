@@ -1,0 +1,754 @@
+['TH89_EC_H3K27me3_ERR770344', 'TH89_EC_H3K27me3_ERR770345', 'TH89_EC_H3K27me3_ERR770347']
+['TH134_CD34_H3K27ac']
+['TH134_CD34_H3K27me3']
+['TH134_CD34_H3K9me3']
+['TH134_CD34_H3K4me1']
+['TH134_CD34_H3K4me3']
+['TH134_CD34_H3K36me3']
+['TH89_EC_H3K27ac', 'TH125_EC_H3K27ac']
+['TH89_EC_H3K27me3', 'TH125_EC_H3K27me3']
+['TH125_EC_H3K9me3']
+['TH125_EC_H3K4me1']
+['TH91_EC_H3K4me3', 'TH89_EC_H3K4me3']
+['TH125_EC_H3K36me3']
+['TH125_LC_H3K27ac', 'TH118_LC_H3K27ac', 'TH91_LC_H3K27ac', 'TH101_LC_H3K27ac']
+['TH117_LC_H3K27me3', 'TH101_LC_H3K27me3']
+['TH125_LC_H3K9me3']
+['TH125_LC_H3K4me1', 'TH101_LC_H3K4me1']
+['TH101_LC_H3K4me3', 'TH118_LC_H3K4me3', 'TH91_LC_H3K4me3']
+['TH101_LC_H3K36me3', 'TH118_LC_H3K36me3', 'TH125_LC_H3K36me3']
+['TH125_SP4_H3K27ac', 'TH91_SP4_H3K27ac']
+['TH125_SP4_H3K27me3']
+['TH125_SP4_H3K9me3']
+['TH125_SP4_H3K4me1']
+['TH91_SP4_H3K4me3']
+['TH125_SP4_H3K36me3']
+['TH125_SP8_H3K27ac']
+['TH125_SP8_H3K27me3']
+['TH125_SP8_H3K9me3']
+['TH125_SP8_H3K4me1']
+['TH91_SP8_H3K4me3']
+['TH125_SP8_H3K36me3']
+['SE_Neonate_CD8_T_cells_RNA_run258', 'SE_Neonate_CD8_T_cells_RNA_run259']
+['CD3_CD28_Neonate_CD8_T_cells_RNA_run258', 'CD3_CD28_Neonate_CD8_T_cells_RNA_run259']
+['IL12_Neonate_CD8_T_cells_RNA_run258', 'IL12_Neonate_CD8_T_cells_RNA_run259']
+['SE_Neonate_2_CD8_T_cells_RNA_run258', 'SE_Neonate_2_CD8_T_cells_RNA_run259']
+['CD3_CD28_Neonate_2_CD8_T_cells_RNA_run258', 'CD3_CD28_Neonate_2_CD8_T_cells_RNA_run259']
+['IL12_Neonate_2_CD8_T_cells_RNA_run258', 'IL12_Neonate_2_CD8_T_cells_RNA_run259']
+['SE_Neonate_3_CD8_T_cells_RNA_run258', 'SE_Neonate_3_CD8_T_cells_RNA_run259']
+['CD3_CD28_Neonate_3_CD8_T_cells_RNA_run258', 'CD3_CD28_Neonate_3_CD8_T_cells_RNA_run259']
+['IL12_Neonate_3_CD8_T_cells_RNA_run258', 'IL12_Neonate_3_CD8_T_cells_RNA_run259']
+['SE_Adult_CD8_T_cells_RNA_run258', 'SE_Adult_CD8_T_cells_RNA_run259']
+['CD3_CD28_Adult_CD8_T_cells_RNA_run258', 'CD3_CD28_Adult_CD8_T_cells_RNA_run259']
+['IL12_Adult_CD8_T_cells_RNA_run258', 'IL12_Adult_CD8_T_cells_RNA_run259']
+['SE_Adult_2_CD8_T_cells_RNA_run258', 'SE_Adult_2_CD8_T_cells_RNA_run259']
+['CD3_CD28_Adult_2_CD8_T_cells_RNA_run258', 'CD3_CD28_Adult_2_CD8_T_cells_RNA_run259']
+['IL12_Adult_2_CD8_T_cells_RNA_run258', 'IL12_Adult_2_CD8_T_cells_RNA_run259']
+['SE_Adult_3_CD8_T_cells_RNA_run258', 'SE_Adult_3_CD8_T_cells_RNA_run259']
+['CD3_CD28_Adult_3_CD8_T_cells_RNA_run258', 'CD3_CD28_Adult_3_CD8_T_cells_RNA_run259']
+['IL12_Adult_3_CD8_T_cells_RNA_run258', 'IL12_Adult_3_CD8_T_cells_RNA_run259']
+['DND-41_SRR1143213_H3K27ac', 'DND-41_SRR1143214_H3K27ac', 'DND-41_SRR1143215_H3K27ac', 'DND-41_SRR1143216_H3K27ac']
+['DND-41_SRR568221_H3K27ac', 'DND-41_SRR568222_H3K27ac']
+['Jurkat1_SRR5789186_H3K27ac', 'Jurkat1_SRR5789187_H3K27ac', 'Jurkat1_SRR5789188_H3K27ac', 'Jurkat1_SRR5789189_H3K27ac']
+['RPMI_run217_H3K27ac', 'RPMI_run233_H3K27ac']
+['capSTARR-seq_P5424_rep1', 'capSTARR-seq_P5424_rep2']
+['802_BT11_H3K27ac', '802_BT11_H3K27me3', '802_BT11_H3K9me3', '802_BT11_Input', '802_BT11_H3K4me3', '802_BT11_H3K36me3', '802_BT11_H3K4me1']
+['KOPT-K1_SRR1143156_H3K4me3', 'KOPT-K1_SRR1143157_H3K4me3', 'KOPT-K1_SRR1143158_H3K4me3', 'KOPT-K1_SRR1143159_H3K4me3', 'KOPT-K1_SRR1143160_H3K4me3']
+['DND-41_SRR1143229_H3K4me3', 'DND-41_SRR1143230_H3K4me3', 'DND-41_SRR1143231_H3K4me3', 'DND-41_SRR1143232_H3K4me3']
+['scp1_r3_run295', 'scp1_r3_run302']
+['D1480_mHSC_SRR1067168_H3K27ac', 'D1480_mHSC_SRR1067231_H3K27ac', 'D1480_mHSC_SRR1067299_H3K27ac']
+['D1549_mHSC_SRR1067126_H3K27ac', 'D1549_mHSC_SRR1067226_H3K27ac', 'D1549_mHSC_SRR1067390_H3K27ac']
+['D1536_mHSC_SRR1067169_H3K27ac', 'D1536_mHSC_SRR1067271_H3K27ac', 'D1536_mHSC_SRR1067272_H3K27ac']
+['D1536_mHSC_SRR1067005_H3K4me1', 'D1536_mHSC_SRR1067006_H3K4me1', 'D1536_mHSC_SRR1067008_H3K4me1', 'D1536_mHSC_SRR1067013_H3K4me1', 'D1536_mHSC_SRR1067014_H3K4me1']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_006.fastq.gz']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_006.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_007.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_008.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_009.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_010.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_011.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_012.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane3_10738/lane3_10738_CCGTCC_L003_R1_013.fastq.gz']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_006.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_007.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_008.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_009.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_010.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/10736_10738_10995/Sample_lane6_10995/lane6_10995_GGCTAC_L006_R1_011.fastq.gz']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_006.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_007.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_008.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8581_LC_TH101_H3K27me3/lane5_8581_GCCAAT_L005_R1_009.fastq.gz']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_006.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_007.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_008.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_009.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8583_LC_TH101_H3K4me1/lane5_8583_CTTGTA_L005_R1_010.fastq.gz']
+['/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_001.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_002.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_003.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_004.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_005.fastq.gz', '/gpfs/projects/spicuglia/mw/inp/fastq/blueprint/8580_LC_TH101_H3K27ac/lane2_8580_ACAGTG_L002_R1_006.fastq.gz']
+['Loucy_SRR5339376_H3K36me3', 'Loucy_SRR5339377_H3K36me3']
+['DND-41_SRR568223_H3K36me3', 'DND-41_SRR568224_H3K36me3']
+['DND-41_SRR568235_H3K79me2', 'DND-41_SRR568236_H3K79me2']
+More than one specie for this experiment. There is likely an error in your Sequencing_summary.xlsx
+More than one specie for this experiment. There is likely an error in your Sequencing_summary.xlsx
+More than one specie for this project. There is likely an error in your Sequencing_summary.xlsx
+['out/bedtools/merge/sort/_-k1,1_-k2,2n/cat/bed-broad-xenopus-project-Starrseq.bed']
+More than one specie for this project. There is likely an error in your Sequencing_summary.xlsx
+digraph snakemake_dag {
+    graph[bgcolor=white, margin=0];
+    node[shape=box, style=rounded, fontname=sans,                 fontsize=10, penwidth=2];
+    edge[penwidth=2, color=grey];
+	0[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT10C_H3K4me3_S01PW6H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	1[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_ALLT10C_H3K4me3_S01PW6H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	2[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Loucy_H3K4me3_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	3[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_LC_TH91_H3K4me3_S010Q7H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	4[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_T3C_H3K4me3.bed", color = "0.05 0.6 0.85", style="rounded"];
+	5[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_ALLT12C_H3K4me3_S01PX4H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	6[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_RPMI-8402_H3K4me3.bed", color = "0.05 0.6 0.85", style="rounded"];
+	7[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-sharp3-from-our-rnaseq-subsets\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	8[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_ALLT5C_H3K4me3_S01PSEH1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	9[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T3C_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	10[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT9C_H3K4me3_S01PV8H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	11[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/EC_TH91_H3K4me3_S010NDH1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	12[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT12C_H3K4me3_S01PX4H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	13[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T16_k4me3_peaks.broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	14[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Jurkat.bed", color = "0.05 0.6 0.85", style="rounded"];
+	15[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/LC_TH91_H3K4me3_S010Q7H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	16[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_EC_TH91_H3K4me3_S010NDH1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	17[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Sil-ALL_H3K4me3.bed", color = "0.05 0.6 0.85", style="rounded"];
+	18[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Loucy_H3K4me3.bed", color = "0.05 0.6 0.85", style="rounded"];
+	19[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-broad-from-our-rnaseq-subsets\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	20[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/CUTLL1_peaks_broadPeak_Broad.bed", color = "0.05 0.6 0.85", style="rounded"];
+	21[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT6C_H3K4me3_S01PTCH1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	22[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CD4_TH91_H3K4me3_S010R5H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	23[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Jurkat_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	24[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_DND41.bed", color = "0.05 0.6 0.85", style="rounded"];
+	25[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_ALLT6C_H3K4me3_S01PTCH1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	26[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-sharp2-from-our-rnaseq-subsets\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	27[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-sharp\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	28[label = "ln_alias\nid: sst/all_samples/BDGP6/bed/broad/Spike_Droso_Loucy_H3K4me3_peaks.bed", color = "0.19 0.6 0.85", style="rounded"];
+	29[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/table_S2.tsv", color = "0.05 0.6 0.85", style="rounded"];
+	30[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-broad\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	31[label = "ln_alias\nid: sst/all_samples/GRCh38/bed/broad/Loucy_H3K4me3_Spike_peaks.bed", color = "0.19 0.6 0.85", style="rounded"];
+	32[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/DND41_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	33[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T15_k4me3_peaks.broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	34[label = "ln_alias\nid: sst/all_samples/BDGP6/bed/broad/Spike_Droso_Jurkat_H3K4me3_peaks.bed", color = "0.19 0.6 0.85", style="rounded"];
+	35[label = "gtftk_coverage_extra_chrominfo_bed_bw\nbed_list_id: bed-hg19-jurkat-sharp1-from-our-rnaseq-subsets\nbw_list_id: bw-hg19-spikein-h3k4me3-inhibitors\nchrominfo_id: chrominfo-hg19\nextra: _-x\ntool: gtftk/coverage", color = "0.49 0.6 0.85", style="rounded"];
+	36[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_CD8_TH91_H3K4me3_S010S3H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	37[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT5C_H3K4me3_S01PSEH1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	38[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Sil-ALL_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	39[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CEM_peaks.broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	40[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CD8_TH91_H3K4me3_S010S3H1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	41[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CUTLL1_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	42[label = "ln_alias\nid: sst/all_samples/GRCh38/bed/broad/Jurkat_H3K4me3_Spike_peaks.bed", color = "0.19 0.6 0.85", style="rounded"];
+	43[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_ALLT9C_H3K4me3_S01PV8H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	44[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_TALL11_H3K4me3_9886.bed", color = "0.05 0.6 0.85", style="rounded"];
+	45[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/RPMI-8402_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	46[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_CD4_TH91_H3K4me3_S010R5H1.bed", color = "0.05 0.6 0.85", style="rounded"];
+	47[label = "bedtools_intersect_b_lambda_extra\next: bed\nextra: _-u\nfeature_list_id: bed-hg19-ensembl-r87-tss-protein-coding\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T11_H3K4me3_9886_peaks_broadPeak\ntool: bedtools/intersect", color = "0.07 0.6 0.85", style="rounded"];
+	48[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT10C_H3K4me3_S01PW6H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	49[label = "sort_coordinates_bedlike_legacy\nfiller: gtftk/get_5p_3p_coords/sed/add_chr/gtftk/select_by_key_key-transcript_biotype_value-protein_coding/gunzip/to-stdout/wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.bed", color = "0.67 0.6 0.85", style="rounded"];
+	50[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Loucy_H3K4me3_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	51[label = "r_extract_control_sharp_subsets_from_our_rnaseq", color = "0.50 0.6 0.85", style="rounded"];
+	52[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/http/hgdownload.cse.ucsc.edu/goldenpath/hg19/database/chromInfo.txt\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	53[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	54[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	55[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	56[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	57[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	58[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	59[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	60[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	61[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	62[label = "deepTools_spikeIn_bamCoverage\nassembly_endo: hg19\nassembly_exo: BDGP6\nextra: \nfiller1: samtools/sam_to_bam_bai_-q_30/bowtie2/pe_\nfiller2: /sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\ntool: deepTools/spikeIn_bamCoverage", color = "0.54 0.6 0.85", style="rounded"];
+	63[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T3C_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	64[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT9C_H3K4me3_S01PV8H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	65[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/EC_TH91_H3K4me3_S010NDH1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	66[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT12C_H3K4me3_S01PX4H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	67[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T16_k4me3_peaks.broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	68[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/LC_TH91_H3K4me3_S010Q7H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	69[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT6C_H3K4me3_S01PTCH1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	70[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CD4_TH91_H3K4me3_S010R5H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	71[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Jurkat_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	72[label = "sort_extra\nextra: _-u\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_Jurkat.bed\ntool: sort/", color = "0.27 0.6 0.85", style="rounded"];
+	73[label = "macs2_noctrl_callpeak_extra\nchip: Spike_Droso_Loucy_H3K4me3\nextra: _--broad_--gsize_dm\nfiller: samtools/index/samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq\ntool: macs2/noctrl_callpeak", color = "0.06 0.6 0.85", style="rounded"];
+	74[label = "sort_extra\nextra: _-u\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Jurkat.bed\ntool: sort/", color = "0.27 0.6 0.85", style="rounded"];
+	75[label = "macs2_noctrl_callpeak_extra\nchip: Loucy_H3K4me3_Spike\nextra: _--broad_--gsize_hs\nfiller: samtools/index/samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq\ntool: macs2/noctrl_callpeak", color = "0.06 0.6 0.85", style="rounded"];
+	76[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/DND41_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	77[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T15_k4me3_peaks.broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	78[label = "macs2_noctrl_callpeak_extra\nchip: Spike_Droso_Jurkat_H3K4me3\nextra: _--broad_--gsize_dm\nfiller: samtools/index/samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq\ntool: macs2/noctrl_callpeak", color = "0.06 0.6 0.85", style="rounded"];
+	79[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/ALLT5C_H3K4me3_S01PSEH1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	80[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/Sil-ALL_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	81[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CEM_peaks.broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	82[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CD8_TH91_H3K4me3_S010S3H1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	83[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/CUTLL1_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	84[label = "macs2_noctrl_callpeak_extra\nchip: Jurkat_H3K4me3_Spike\nextra: _--broad_--gsize_hs\nfiller: samtools/index/samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq\ntool: macs2/noctrl_callpeak", color = "0.06 0.6 0.85", style="rounded"];
+	85[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/RPMI-8402_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	86[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Broad_all_genes/T11_H3K4me3_9886_peaks_broadPeak.bed", color = "0.05 0.6 0.85", style="rounded"];
+	87[label = "gtftk_get_5p_3p_coords\nextra: \nfiller: sed/add_chr/gtftk/select_by_key_key-transcript_biotype_value-protein_coding/gunzip/to-stdout/wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87\ntool: gtftk/get_5p_3p_coords", color = "0.30 0.6 0.85", style="rounded"];
+	88[label = "subread_featureCounts_extra\nbam_list_id: bam-hg19-rna-jurkat-loucy\nextra: _-O\ngtf_saf_id: gtf-GRCh37-ensembl-r87-protein-coding\ntool: subread/featureCounts", color = "0.17 0.6 0.85", style="rounded"];
+	89[label = "sort_extra\nextra: _-u_-k1,1_-k2,2n\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_Jurkat.bed\ntool: sort/", color = "0.27 0.6 0.85", style="rounded"];
+	90[label = "sort_extra\nextra: _-u_-k1,1_-k2,2n\nfiller: ln/updir/mw-tall/inp/Peaks_hg19_Mohammed/Broad/NM_Broad_Jurkat.bed\ntool: sort/", color = "0.27 0.6 0.85", style="rounded"];
+	91[label = "wget_protocol\npath: hgdownload.cse.ucsc.edu/goldenpath/hg19/database/chromInfo.txt.gz\nprotocol: http", color = "0.17 0.6 0.85", style="rounded"];
+	92[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	93[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	94[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	95[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	96[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	97[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	98[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	99[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	100[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	101[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	102[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	103[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	104[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	105[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	106[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	107[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	108[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	109[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	110[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_hg19/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	111[label = "samtools_sam_to_bam_bai_extra\nextra: _-q_30\nfiller: bowtie2/pe_BDGP6/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\ntool: samtools/sam_to_bam_bai", color = "0.10 0.6 0.85", style="rounded"];
+	112[label = "ln_srf_parent_dir\nfiller: mw-tall/inp/Peaks_hg19_Mohammed/Sharp/NM_Sharp_Jurkat.bed", color = "0.05 0.6 0.85", style="rounded"];
+	113[label = "samtools_index\nfiller: samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3", color = "0.55 0.6 0.85", style="rounded"];
+	114[label = "samtools_index\nfiller: samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_H3K4me3_Spike", color = "0.55 0.6 0.85", style="rounded"];
+	115[label = "samtools_index\nfiller: samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3", color = "0.55 0.6 0.85", style="rounded"];
+	116[label = "samtools_index\nfiller: samtools/sort/samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_H3K4me3_Spike", color = "0.55 0.6 0.85", style="rounded"];
+	117[label = "sed_add_chr_legacy\nfiller: gtftk/select_by_key_key-transcript_biotype_value-protein_coding/gunzip/to-stdout/wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf", color = "0.58 0.6 0.85", style="rounded"];
+	118[label = "gtftk_select_by_key_key_value\nfiller: gunzip/to-stdout/wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87\nkey: gene_biotype\nvalue: protein_coding", color = "0.27 0.6 0.85", style="rounded"];
+	119[label = "ln_alias\nid: sst/all_samples/hg19/bam/Jurkat_DMSO_5h.bam", color = "0.19 0.6 0.85", style="rounded"];
+	120[label = "ln_alias\nid: sst/all_samples/hg19/bam/Loucy_DMSO_5h.bam", color = "0.19 0.6 0.85", style="rounded"];
+	121[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	122[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	123[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	124[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	125[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	126[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	127[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	128[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	129[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	130[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	131[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	132[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	133[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	134[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	135[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	136[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	137[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	138[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	139[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	140[label = "bowtie2_paired_end_extra\nextra: \nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\nindex: BDGP6\ntool: bowtie2/pe", color = "0.43 0.6 0.85", style="rounded"];
+	141[label = "samtools_sort_extra\nextra: \nfiller: samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3\ntool: samtools/sort", color = "0.06 0.6 0.85", style="rounded"];
+	142[label = "samtools_sort_extra\nextra: \nfiller: samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_H3K4me3_Spike\ntool: samtools/sort", color = "0.06 0.6 0.85", style="rounded"];
+	143[label = "samtools_sort_extra\nextra: \nfiller: samtools/view_sam_to_bam_-q_30/bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3\ntool: samtools/sort", color = "0.06 0.6 0.85", style="rounded"];
+	144[label = "samtools_sort_extra\nextra: \nfiller: samtools/view_sam_to_bam_-q_30/bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_H3K4me3_Spike\ntool: samtools/sort", color = "0.06 0.6 0.85", style="rounded"];
+	145[label = "gtftk_select_by_key_key_value\nfiller: gunzip/to-stdout/wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87\nkey: transcript_biotype\nvalue: protein_coding", color = "0.27 0.6 0.85", style="rounded"];
+	146[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	147[label = "samtools_index\nfiller: star/pe_fastq.gz_to_bam_standard_staridx-hg19-ensembl_gtf-hg19-ensembl/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_5h", color = "0.55 0.6 0.85", style="rounded"];
+	148[label = "samtools_index\nfiller: star/pe_fastq.gz_to_bam_standard_staridx-hg19-ensembl_gtf-hg19-ensembl/sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_5h", color = "0.55 0.6 0.85", style="rounded"];
+	149[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_DMSO_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	150[label = "tar_xvzf_igenome\nindex: hg19\nsource: UCSC\nspecie: Homo_sapiens", color = "0.41 0.6 0.85", style="rounded"];
+	151[label = "bowtie2_build\nfa_genome_id: fa-genome-BDGP6", color = "0.66 0.6 0.85", style="rounded"];
+	152[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_OCIR_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	153[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_PM_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	154[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_RY_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	155[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	156[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	157[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	158[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	159[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	160[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	161[label = "samtools_view_sam_to_bam_extra\nextra: _-q_30\nfiller: bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3\ntool: samtools/view_sam_to_bam", color = "0.25 0.6 0.85", style="rounded"];
+	162[label = "samtools_view_sam_to_bam_extra\nextra: _-q_30\nfiller: bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_H3K4me3_Spike\ntool: samtools/view_sam_to_bam", color = "0.25 0.6 0.85", style="rounded"];
+	163[label = "samtools_view_sam_to_bam_extra\nextra: _-q_30\nfiller: bowtie2/se_BDGP6/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3\ntool: samtools/view_sam_to_bam", color = "0.25 0.6 0.85", style="rounded"];
+	164[label = "samtools_view_sam_to_bam_extra\nextra: _-q_30\nfiller: bowtie2/se_GRCh38/sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_H3K4me3_Spike\ntool: samtools/view_sam_to_bam", color = "0.25 0.6 0.85", style="rounded"];
+	165[label = "wget_protocol\npath: ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	166[label = "star_pe_extra\nextin: fastq.gz\nextout: bam\nextra: _standard\nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_DMSO_5h\ngtf_id: gtf-hg19-ensembl\nindex_id: staridx-hg19-ensembl\ntool: star/pe", color = "0.45 0.6 0.85", style="rounded"];
+	167[label = "star_pe_extra\nextin: fastq.gz\nextout: bam\nextra: _standard\nfiller: sickle/pe_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_DMSO_5h\ngtf_id: gtf-hg19-ensembl\nindex_id: staridx-hg19-ensembl\ntool: star/pe", color = "0.45 0.6 0.85", style="rounded"];
+	168[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	169[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	170[label = "wget_protocol\npath: igenomes.illumina.com.s3-website-us-east-1.amazonaws.com/Homo_sapiens/UCSC/hg19/Homo_sapiens_UCSC_hg19.tar.gz\nprotocol: http", color = "0.17 0.6 0.85", style="rounded"];
+	171[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-100/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.28.dna_sm.toplevel.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	172[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_OCIR_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	173[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_OCIR_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	174[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PM_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	175[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PM_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	176[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_RY_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	177[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_RY_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	178[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	179[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_24H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	180[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	181[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PBIT_5H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	182[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	183[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_PBIT_24H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	184[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	185[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_DMSO_24H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	186[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	187[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_PBIT_5H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	188[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	189[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_PBIT_24H_H3K4me3_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	190[label = "bowtie2_single_end_extra\nextra: \nfiller: sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3\nindex: BDGP6\ntool: bowtie2/se", color = "0.25 0.6 0.85", style="rounded"];
+	191[label = "bowtie2_single_end_extra\nextra: \nfiller: sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Loucy_H3K4me3_Spike\ntool: bowtie2/se", color = "0.25 0.6 0.85", style="rounded"];
+	192[label = "bowtie2_single_end_extra\nextra: \nfiller: sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3\nindex: BDGP6\ntool: bowtie2/se", color = "0.25 0.6 0.85", style="rounded"];
+	193[label = "bowtie2_single_end_extra\nextra: \nfiller: sickle/se_-t_sanger_-q_20/ln/alias/sst/all_samples/fastq/Jurkat_H3K4me3_Spike\ntool: bowtie2/se", color = "0.25 0.6 0.85", style="rounded"];
+	194[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_DMSO_5h\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	195[label = "star_build_index\nfa_id: fa-genome-GRCh37\ngtf_id: gtf-GRCh37-ensembl", color = "0.42 0.6 0.85", style="rounded"];
+	196[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/gtf/homo_sapiens/Homo_sapiens.GRCh37.67.gtf\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	197[label = "sickle_pe_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Loucy_DMSO_5h\ntool: sickle/pe", color = "0.47 0.6 0.85", style="rounded"];
+	198[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-100/fasta/drosophila_melanogaster/dna/Drosophila_melanogaster.BDGP6.28.dna_sm.toplevel.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	199[label = "sickle_se_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3\ntool: sickle/se", color = "0.39 0.6 0.85", style="rounded"];
+	200[label = "sickle_se_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Loucy_H3K4me3_Spike\ntool: sickle/se", color = "0.39 0.6 0.85", style="rounded"];
+	201[label = "tar_xvzf_igenome\nindex: GRCh38\nsource: NCBI\nspecie: Homo_sapiens", color = "0.41 0.6 0.85", style="rounded"];
+	202[label = "sickle_se_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3\ntool: sickle/se", color = "0.39 0.6 0.85", style="rounded"];
+	203[label = "sickle_se_extra\next: fastq.gz\nextra: _-t_sanger_-q_20\nfiller: ln/alias/sst/all_samples/fastq/Jurkat_H3K4me3_Spike\ntool: sickle/se", color = "0.39 0.6 0.85", style="rounded"];
+	204[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_5h_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	205[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_DMSO_5h_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	206[label = "cat\ncat_id: assembly_ensembl/GRCh37.fa", color = "0.10 0.6 0.85", style="rounded"];
+	207[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/gtf/homo_sapiens/Homo_sapiens.GRCh37.67.gtf.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	208[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_DMSO_5h_1.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	209[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_DMSO_5h_2.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	210[label = "ln_alias\nid: sst/all_samples/fastq/Spike_Droso_Loucy_H3K4me3.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	211[label = "ln_alias\nid: sst/all_samples/fastq/Loucy_H3K4me3_Spike.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	212[label = "wget_protocol\npath: igenomes.illumina.com.s3-website-us-east-1.amazonaws.com/Homo_sapiens/NCBI/GRCh38/Homo_sapiens_NCBI_GRCh38.tar.gz\nprotocol: http", color = "0.17 0.6 0.85", style="rounded"];
+	213[label = "ln_alias\nid: sst/all_samples/fastq/Spike_Droso_Jurkat_H3K4me3.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	214[label = "ln_alias\nid: sst/all_samples/fastq/Jurkat_H3K4me3_Spike.fastq.gz", color = "0.19 0.6 0.85", style="rounded"];
+	215[label = "cat\ncat_id: merge-nexsteq500-pe/Jurkat_DMSO_5h_1.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	216[label = "cat\ncat_id: merge-nexsteq500-pe/Jurkat_DMSO_5h_2.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	217[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.1.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	218[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.2.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	219[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.3.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	220[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.4.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	221[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.5.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	222[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.6.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	223[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.7.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	224[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.8.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	225[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.9.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	226[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.10.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	227[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.11.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	228[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.12.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	229[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.13.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	230[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.14.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	231[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.15.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	232[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.16.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	233[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.17.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	234[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.18.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	235[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.19.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	236[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.20.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	237[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.21.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	238[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.22.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	239[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.X.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	240[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.Y.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	241[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.MT.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	242[label = "gunzip_extra\nextra: to-stdout\nfiller: wget/ftp/ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.nonchromosomal.fa\ntool: gunzip/", color = "0.26 0.6 0.85", style="rounded"];
+	243[label = "cat\ncat_id: merge-nexsteq500-pe/Loucy_DMSO_5h_1.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	244[label = "cat\ncat_id: merge-nexsteq500-pe/Loucy_DMSO_5h_2.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	245[label = "cat\ncat_id: merge-nexsteq500-se/Spike_Droso_Loucy_H3K4me3.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	246[label = "cat\ncat_id: merge-nexsteq500-se/Loucy_H3K4me3_Spike.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	247[label = "cat\ncat_id: merge-nexsteq500-se/Spike_Droso_Jurkat_H3K4me3.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	248[label = "cat\ncat_id: merge-nexsteq500-se/Jurkat_H3K4me3_Spike.fastq.gz", color = "0.10 0.6 0.85", style="rounded"];
+	249[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L001_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	250[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L002_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	251[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L003_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	252[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L004_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	253[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L001_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	254[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L002_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	255[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L003_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	256[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001833_Jurkat_PBIT_5h_DMSO-60062/Jurkat-PBIT-5h-DMSO_S3_L004_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	257[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.1.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	258[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.2.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	259[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.3.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	260[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.4.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	261[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.5.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	262[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.6.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	263[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.7.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	264[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.8.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	265[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.9.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	266[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.10.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	267[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.11.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	268[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.12.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	269[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.13.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	270[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.14.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	271[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.15.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	272[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.16.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	273[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.17.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	274[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.18.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	275[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.19.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	276[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.20.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	277[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.21.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	278[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.22.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	279[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.X.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	280[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.Y.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	281[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.chromosome.MT.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	282[label = "wget_protocol\npath: ftp.ensembl.org/pub/release-67/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.67.dna.nonchromosomal.fa.gz\nprotocol: ftp", color = "0.17 0.6 0.85", style="rounded"];
+	283[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L001_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	284[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L002_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	285[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L003_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	286[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L004_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	287[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L001_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	288[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L002_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	289[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L003_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	290[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run189/S001843_Loucy_PBIT_5h_DMSO-60064/Loucy-PBIT-5h-DMSO_S5_L004_R2_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	291[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001659_Loucy_H3K4me3_Spike-41054/Loucy-H3K4me3-Spike_S14_L001_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	292[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001659_Loucy_H3K4me3_Spike-41054/Loucy-H3K4me3-Spike_S14_L002_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	293[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001659_Loucy_H3K4me3_Spike-41054/Loucy-H3K4me3-Spike_S14_L003_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	294[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001659_Loucy_H3K4me3_Spike-41054/Loucy-H3K4me3-Spike_S14_L004_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	295[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001660_Jurkat_H3K4me3_Spike-41055/Jurkat-H3K4me3-Spike_S15_L001_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	296[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001660_Jurkat_H3K4me3_Spike-41055/Jurkat-H3K4me3-Spike_S15_L002_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	297[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001660_Jurkat_H3K4me3_Spike-41055/Jurkat-H3K4me3-Spike_S15_L003_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	298[label = "ln_srf_parent_dir\nfiller: mw/inp/fastq/run170/S001660_Jurkat_H3K4me3_Spike-41055/Jurkat-H3K4me3-Spike_S15_L004_R1_001.fastq.gz", color = "0.05 0.6 0.85", style="rounded"];
+	48 -> 0
+	49 -> 0
+	50 -> 2
+	49 -> 2
+	51 -> 7
+	52 -> 7
+	53 -> 7
+	54 -> 7
+	55 -> 7
+	56 -> 7
+	57 -> 7
+	58 -> 7
+	59 -> 7
+	60 -> 7
+	61 -> 7
+	62 -> 7
+	63 -> 9
+	49 -> 9
+	64 -> 10
+	49 -> 10
+	65 -> 11
+	49 -> 11
+	66 -> 12
+	49 -> 12
+	67 -> 13
+	49 -> 13
+	68 -> 15
+	49 -> 15
+	51 -> 19
+	52 -> 19
+	53 -> 19
+	54 -> 19
+	55 -> 19
+	56 -> 19
+	57 -> 19
+	58 -> 19
+	59 -> 19
+	60 -> 19
+	61 -> 19
+	62 -> 19
+	69 -> 21
+	49 -> 21
+	70 -> 22
+	49 -> 22
+	71 -> 23
+	49 -> 23
+	51 -> 26
+	52 -> 26
+	53 -> 26
+	54 -> 26
+	55 -> 26
+	56 -> 26
+	57 -> 26
+	58 -> 26
+	59 -> 26
+	60 -> 26
+	61 -> 26
+	62 -> 26
+	72 -> 27
+	52 -> 27
+	53 -> 27
+	54 -> 27
+	55 -> 27
+	56 -> 27
+	57 -> 27
+	58 -> 27
+	59 -> 27
+	60 -> 27
+	61 -> 27
+	62 -> 27
+	73 -> 28
+	74 -> 30
+	52 -> 30
+	53 -> 30
+	54 -> 30
+	55 -> 30
+	56 -> 30
+	57 -> 30
+	58 -> 30
+	59 -> 30
+	60 -> 30
+	61 -> 30
+	62 -> 30
+	75 -> 31
+	76 -> 32
+	49 -> 32
+	77 -> 33
+	49 -> 33
+	78 -> 34
+	51 -> 35
+	52 -> 35
+	53 -> 35
+	54 -> 35
+	55 -> 35
+	56 -> 35
+	57 -> 35
+	58 -> 35
+	59 -> 35
+	60 -> 35
+	61 -> 35
+	62 -> 35
+	79 -> 37
+	49 -> 37
+	80 -> 38
+	49 -> 38
+	81 -> 39
+	49 -> 39
+	82 -> 40
+	49 -> 40
+	83 -> 41
+	49 -> 41
+	84 -> 42
+	85 -> 45
+	49 -> 45
+	86 -> 47
+	49 -> 47
+	87 -> 49
+	88 -> 51
+	89 -> 51
+	90 -> 51
+	91 -> 52
+	92 -> 53
+	93 -> 53
+	94 -> 54
+	95 -> 54
+	96 -> 55
+	97 -> 55
+	98 -> 56
+	99 -> 56
+	100 -> 57
+	101 -> 57
+	102 -> 58
+	103 -> 58
+	104 -> 59
+	105 -> 59
+	106 -> 60
+	107 -> 60
+	108 -> 61
+	109 -> 61
+	110 -> 62
+	111 -> 62
+	112 -> 72
+	113 -> 73
+	14 -> 74
+	114 -> 75
+	115 -> 78
+	116 -> 84
+	117 -> 87
+	118 -> 88
+	119 -> 88
+	120 -> 88
+	112 -> 89
+	14 -> 90
+	121 -> 92
+	122 -> 93
+	123 -> 94
+	124 -> 95
+	125 -> 96
+	126 -> 97
+	127 -> 98
+	128 -> 99
+	129 -> 100
+	130 -> 101
+	131 -> 102
+	132 -> 103
+	133 -> 104
+	134 -> 105
+	135 -> 106
+	136 -> 107
+	137 -> 108
+	138 -> 109
+	139 -> 110
+	140 -> 111
+	141 -> 113
+	142 -> 114
+	143 -> 115
+	144 -> 116
+	145 -> 117
+	146 -> 118
+	147 -> 119
+	148 -> 120
+	149 -> 121
+	150 -> 121
+	149 -> 122
+	151 -> 122
+	152 -> 123
+	150 -> 123
+	152 -> 124
+	151 -> 124
+	153 -> 125
+	150 -> 125
+	153 -> 126
+	151 -> 126
+	154 -> 127
+	150 -> 127
+	154 -> 128
+	151 -> 128
+	155 -> 129
+	150 -> 129
+	155 -> 130
+	151 -> 130
+	156 -> 131
+	150 -> 131
+	156 -> 132
+	151 -> 132
+	157 -> 133
+	150 -> 133
+	157 -> 134
+	151 -> 134
+	158 -> 135
+	150 -> 135
+	158 -> 136
+	151 -> 136
+	159 -> 137
+	150 -> 137
+	159 -> 138
+	151 -> 138
+	160 -> 139
+	150 -> 139
+	160 -> 140
+	151 -> 140
+	161 -> 141
+	162 -> 142
+	163 -> 143
+	164 -> 144
+	146 -> 145
+	165 -> 146
+	166 -> 147
+	167 -> 148
+	168 -> 149
+	169 -> 149
+	170 -> 150
+	171 -> 151
+	172 -> 152
+	173 -> 152
+	174 -> 153
+	175 -> 153
+	176 -> 154
+	177 -> 154
+	178 -> 155
+	179 -> 155
+	180 -> 156
+	181 -> 156
+	182 -> 157
+	183 -> 157
+	184 -> 158
+	185 -> 158
+	186 -> 159
+	187 -> 159
+	188 -> 160
+	189 -> 160
+	190 -> 161
+	191 -> 162
+	192 -> 163
+	193 -> 164
+	194 -> 166
+	195 -> 166
+	196 -> 166
+	197 -> 167
+	195 -> 167
+	196 -> 167
+	198 -> 171
+	199 -> 190
+	151 -> 190
+	200 -> 191
+	201 -> 191
+	202 -> 192
+	151 -> 192
+	203 -> 193
+	201 -> 193
+	204 -> 194
+	205 -> 194
+	196 -> 195
+	206 -> 195
+	207 -> 196
+	208 -> 197
+	209 -> 197
+	210 -> 199
+	211 -> 200
+	212 -> 201
+	213 -> 202
+	214 -> 203
+	215 -> 204
+	216 -> 205
+	217 -> 206
+	218 -> 206
+	219 -> 206
+	220 -> 206
+	221 -> 206
+	222 -> 206
+	223 -> 206
+	224 -> 206
+	225 -> 206
+	226 -> 206
+	227 -> 206
+	228 -> 206
+	229 -> 206
+	230 -> 206
+	231 -> 206
+	232 -> 206
+	233 -> 206
+	234 -> 206
+	235 -> 206
+	236 -> 206
+	237 -> 206
+	238 -> 206
+	239 -> 206
+	240 -> 206
+	241 -> 206
+	242 -> 206
+	243 -> 208
+	244 -> 209
+	245 -> 210
+	246 -> 211
+	247 -> 213
+	248 -> 214
+	249 -> 215
+	250 -> 215
+	251 -> 215
+	252 -> 215
+	253 -> 216
+	254 -> 216
+	255 -> 216
+	256 -> 216
+	257 -> 217
+	258 -> 218
+	259 -> 219
+	260 -> 220
+	261 -> 221
+	262 -> 222
+	263 -> 223
+	264 -> 224
+	265 -> 225
+	266 -> 226
+	267 -> 227
+	268 -> 228
+	269 -> 229
+	270 -> 230
+	271 -> 231
+	272 -> 232
+	273 -> 233
+	274 -> 234
+	275 -> 235
+	276 -> 236
+	277 -> 237
+	278 -> 238
+	279 -> 239
+	280 -> 240
+	281 -> 241
+	282 -> 242
+	283 -> 243
+	284 -> 243
+	285 -> 243
+	286 -> 243
+	287 -> 244
+	288 -> 244
+	289 -> 244
+	290 -> 244
+	291 -> 245
+	292 -> 245
+	293 -> 245
+	294 -> 245
+	291 -> 246
+	292 -> 246
+	293 -> 246
+	294 -> 246
+	295 -> 247
+	296 -> 247
+	297 -> 247
+	298 -> 247
+	295 -> 248
+	296 -> 248
+	297 -> 248
+	298 -> 248
+}            
