@@ -19,8 +19,8 @@ snakemake -prk --rerun-incomplete --cores 2 --use-conda $SMI --rulegraph > $SM_D
 snakemake -prk --rerun-incomplete --cores 2 --use-conda $SMI -n > $SM_DIR/out/snakemake/all_tasks.txt
 
 cd $SM_DIR/out/snakemake
-dot -o all_dag.pdf all_dag.dot
-dot -o all_rulegraph.pdf all_rulegraph.dot
+dot -Tpdf -o all_dag.pdf all_dag.dot
+dot -Tpdf -o all_rulegraph.pdf all_rulegraph.dot
 
 
 # 5. Compile the Bookdown report
