@@ -6,7 +6,6 @@ if not os.path.isfile("src/snakemake/tables/Sequencing_summary_belhocine2021_sub
     mwconf['qc_targets'] = []
 else:
     samples = pandas.read_excel("src/snakemake/tables/Sequencing_summary_belhocine2021_subset.xlsx", sheet_name="samples", engine='openpyxl')
-    print(samples)
     #genomes = pandas.read_excel("../mw-sst/Sequencing_summary.xlsx", sheet_name="genomes")
     #samples = pandas.read_csv("../mw-sst/Sequencing_summary.csv")
     samples.type.fillna("Unknown", inplace=True)
@@ -250,7 +249,6 @@ else:
 
             elif str(row['origin']) == 'merge_fastq':
                 SAMPLES_TO_MERGE = ACCESSION.split(",")
-                print(SAMPLES_TO_MERGE)
                 if SE_OR_PE == 'se':
                     samples_to_cat = str(["out/ln/alias/sst/all_samples/fastq/" + SAMPLE + ".fastq.gz" for SAMPLE in SAMPLES_TO_MERGE])
                     concat_sample = "merge-fastq-samples/" + SAMPLE_NAME + ".fastq.gz"
@@ -591,7 +589,7 @@ else:
         rna_exp_samples = samples[(samples['process'].isin(['yes','done'])) & (samples['exp'] == rna_exp)]
 
         if len(rna_exp_samples.specie.unique()) != 1:
-            print('More than one specie for this experiment ' + str(rna_exp) + '. There is likely an error in your Sequencing_summary.xlsx')
+            eprint('More than one specie for this experiment ' + str(rna_exp) + '. There is likely an error in your Sequencing_summary.xlsx')
         else:
             SPECIE = rna_exp_samples.specie.unique()
             if SPECIE in ['human', 'Human', 'Homo_sapiens']:
