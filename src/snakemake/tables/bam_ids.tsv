@@ -1,3 +1,3 @@
 id	path
 bam-hg19-rna-jurkat-loucy	expand('out/ln/alias/sst/all_samples/hg19/bam/{sample}_DMSO_5h.bam', sample=['Jurkat','Loucy'])
-bam-hg19-rna-jurkat-loucy-pbit	expand('out/ln/alias/sst/all_samples/hg19/bam/{sample}.bam', sample=[x.strip() for x in open("../mw-tall/src/snakemake/lists/samples_jurkat_loucy_pbit.txt", "r")])
+bam-hg19-rna-jurkat-loucy-pbit	expand('out/ln/alias/sst/all_samples/hg19/bam/{sample}.bam', sample=[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/samples_jurkat_loucy_pbit.txt", "r")])
