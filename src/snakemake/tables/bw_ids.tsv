@@ -3,9 +3,9 @@ bw-BDP6-spike-broad-loucy-jurkat	expand("out/ln/alias/sst/all_samples/BDGP6/bw/{
 bw-GRCh38-spike-broad-loucy-jurkat	expand("out/ln/alias/sst/all_samples/GRCh38/bw/{sample}.bw", sample=["Loucy_H3K4me3_Spike", "Jurkat_H3K4me3_Spike"])
 bw-hg19-spike-broad-loucy-jurkat	expand("out/ln/alias/sst/all_samples/hg19/bw/{sample}.bw", sample=["Loucy_H3K4me3_Spike", "Jurkat_H3K4me3_Spike"])
 bw-hg19-Orlando2014-Jurkat	expand("out/ucsc/bedGraphToBigWig_chrominfo-hg19/sort/_-k1,1_-k2,2n/tail/_-n+2/igvtools/tdftobedgraph/wget_interesting_samples_from_GSE60104/{samples}.spikein.hg19.bedgraph.bw",samples=["GSM1464990_20140211_733","GSM1464999_20140509_1283","GSM1465003_20140509_1287","GSM1465019_20140211_746"])
-bw-hg19-broad-tall-rev3-q4	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4.txt","r")]
-bw-hg19-broad-tall-rev3-q4-no-h3k4me3	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4_no_h3k4me3.txt","r")]
-bw-hg19-broad-tall-rev3-q4-h3k36me3	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4_h3k36me3.txt","r")]
-bw-hg19-spikein-jurkat-h3k4me3-inhibitors	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_spikein_jurkat_h3k4me3_inhibitors.txt","r")]
-bw-hg19-spikein-h3k4me3-inhibitors	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_spikein_h3k4me3_inhibitors.txt","r")]
-bw-hg19-merged-thymocytes-h3k4me3	[x.strip() for x in open("../mw-tall/src/snakemake/lists/bw_hg19_merged_thymocytes_h3k4me3.txt","r")]
+bw-hg19-broad-tall-rev3-q4	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4.txt","r")]
+bw-hg19-broad-tall-rev3-q4-no-h3k4me3	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4_no_h3k4me3.txt","r")]
+bw-hg19-broad-tall-rev3-q4-h3k36me3	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_broad_tall_rev3_q4_h3k36me3.txt","r")]
+bw-hg19-spikein-jurkat-h3k4me3-inhibitors	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_spikein_jurkat_h3k4me3_inhibitors.txt","r")]
+bw-hg19-spikein-h3k4me3-inhibitors	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_spikein_h3k4me3_inhibitors.txt","r")]
+bw-hg19-merged-thymocytes-h3k4me3	[x.strip() for x in open("../mw-belhocine2021/src/snakemake/lists/bw_hg19_merged_thymocytes_h3k4me3.txt","r")]

@@ -1,11 +1,12 @@
 #if not os.path.isfile("../mw-sst/Sequencing_summary.csv"):
-if not os.path.isfile("src/snakemake/tables/sequencing_samples.xlsx"):
+if not os.path.isfile("src/snakemake/tables/Sequencing_summary_belhocine2021_subset.xlsx"):
     #eprint('No Sequencing_summary.xlsx')
     mwconf['targets'] = []
     mwconf['bcl2fastq_targets'] = []
     mwconf['qc_targets'] = []
 else:
-    samples = pandas.read_excel("src/snakemake/tables/sequencing_samples.xlsx", sheet_name="samples", engine='openpyxl')
+    samples = pandas.read_excel("src/snakemake/tables/Sequencing_summary_belhocine2021_subset.xlsx", sheet_name="samples", engine='openpyxl')
+    print(samples)
     #genomes = pandas.read_excel("../mw-sst/Sequencing_summary.xlsx", sheet_name="genomes")
     #samples = pandas.read_csv("../mw-sst/Sequencing_summary.csv")
     samples.type.fillna("Unknown", inplace=True)
