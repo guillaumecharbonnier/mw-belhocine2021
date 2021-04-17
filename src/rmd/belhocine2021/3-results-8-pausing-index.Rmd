@@ -23,5 +23,4 @@ knitr::include_graphics(smi)
 smi <- "out/r/compute_pausing_index_in_broad_and_sharp_subsets_from_our_rnaseq/pi_genebodies_trim_500b_boxplot.png"
 linkSmiToRmdAndBookDir(smi)
 knitr::include_graphics(smi)
-
 ```
