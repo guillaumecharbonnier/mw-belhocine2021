@@ -5,12 +5,15 @@ BASH_DIR=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 SM_DIR=$BASH_DIR/../..
 RMD_DIR=$BASH_DIR/../rmd/belhocine2021
 
+# 2. Create required conda environnements
+conda env create -f $SM_DIR/../mw-lib/src/snakemake/envs/snakemake.yaml
+eval "$(conda shell.bash hook)"
+conda activate snakemake
+
 # 3. Find Snakemake targets in the Rmd files
 SMI=`grep '^smi <- "' $RMD_DIR/*.Rmd | sed 's/^.*smi <- "//' | tr '"' ' ' | tr '\r\n' ' '` 
 
 # 4. Run Snakemake on all targets in the Rmd files
-eval "$(conda shell.bash hook)"
-conda activate snakemake
 cd $SM_DIR
 
 mkdir -p $SM_DIR/out/snakemake
